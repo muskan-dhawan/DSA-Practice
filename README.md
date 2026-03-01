@@ -1,7 +1,7 @@
 # DSA-Practice
-# HackerRank 1: Left Rotation
+### HackerRank 1: Left Rotation
 This repository contains a solution for the **Left Rotation** problem from [HackerRank](https://www.hackerrank.com/domains/data-structures).
-## Problem Statement
+### Problem Statement
 A **left rotation** operation on a circular array shifts each of the array's elements **1 unit to the left**. The elements that fall off the left end reappear at the right end.  
 Given an integer `d`, rotate the array that many steps to the left and return the result.
 ### Example
@@ -24,7 +24,5 @@ Turning from the front:
 1 page turn
 Turning from the back:
 2 page turns
-
 Minimum page turns required:
-
 1
