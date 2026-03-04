@@ -79,5 +79,75 @@ Buy the 2nd keyboard and the 3rd USB drive for a total cost of 8 + 1 = 9.
 -1
 **Explanation 1**
 There is no way to buy one keyboard and one USB drive because 4 + 5 > 5, so return -1.
+### HACKERRANK 5 – Cats and a Mouse
+Problem Statement
+Two cats and a mouse are at various positions on a straight line.
+You are given their starting positions. Your task is to determine which cat will reach the mouse first, assuming:
+The mouse does not move.
+Both cats travel at the same speed.
+If both cats reach the mouse at the same time, they fight and the mouse escapes.
+Function Description
+Complete the function catAndMouse.
+catAndMouse has the following parameters:
+int x: position of Cat A
+int y: position of Cat B
+int z: position of Mouse C
+Returns
+string:
 
+"Cat A" if Cat A reaches first
+
+"Cat B" if Cat B reaches first
+
+"Mouse C" if both reach at the same time
+
+Input Format
+
+The first line contains an integer q, the number of queries.
+
+Each of the next q lines contains three space-separated integers:
+
+x y z
+
+Constraints
+
+1 ≤ q ≤ 100
+
+1 ≤ x, y, z ≤ 100
+
+Sample Input 5
+4
+1 2 3
+1 3 2
+4 2 5
+2 6 4
+Sample Output 5
+Cat B
+Mouse C
+Cat A
+Mouse C
+Explanation 5
+Query 1:
+
+|1 − 3| = 2
+|2 − 3| = 1
+Cat B is closer → Cat B
+
+Query 2:
+
+|1 − 2| = 1
+|3 − 2| = 1
+Equal → Mouse C
+
+Query 3:
+
+|4 − 5| = 1
+|2 − 5| = 3
+Cat A is closer → Cat A
+
+Query 4:
+
+|2 − 4| = 2
+|6 − 4| = 2
+Equal → Mouse C
 
