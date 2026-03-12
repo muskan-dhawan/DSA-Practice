@@ -303,3 +303,54 @@ max height = 3
 word length = 3
 
 Area = 3 × 3 = 9
+### HACKERRANK 9 : Utopian Tree
+
+The Utopian Tree goes through 2 growth cycles every year:
+
+Spring: The height of the tree doubles.
+
+Summer: The height of the tree increases by 1 meter.
+
+Initially, a sapling is planted with a height of 1 meter at the beginning of spring.
+
+Your task is to determine the height of the tree after n growth cycles.
+
+Function Description
+
+Complete the function:
+
+int utopianTree(int n)
+
+Parameter:
+
+n → number of growth cycles.
+
+Return:
+
+The height of the tree after n cycles.
+
+Input Format
+
+First line contains integer t → number of test cases.
+
+Each of the next t lines contains an integer n.
+
+Sample Input
+3
+0
+1
+4
+Sample Output
+1
+2
+7
+Explanation
+Cycle	Operation	Height
+0	Initial height	1
+1	Spring (×2)	2
+2	Summer (+1)	3
+3	Spring (×2)	6
+4	Summer (+1)	7
+
+So after 4 cycles, height = 7.
+
