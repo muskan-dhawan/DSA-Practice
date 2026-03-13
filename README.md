@@ -353,4 +353,81 @@ Cycle	Operation	Height
 4	Summer (+1)	7
 
 So after 4 cycles, height = 7.
+### HACKERRANK 10: Climbing the Leaderboard
+An arcade game player wants to climb to the top of the leaderboard and track their ranking. The game uses Dense Ranking, so its leaderboard works like this:
 
+The player with the highest score is ranked 1.
+
+Players with the same score receive the same rank.
+
+The next player gets the immediately following rank.
+
+Example
+
+Leaderboard scores:
+
+100 100 50 40 40 20 10
+
+
+Ranks become:
+
+1 1 2 3 3 4 5
+
+
+If the player scores are:
+
+5 25 50 120
+
+
+Then their ranks after each game are:
+
+6 4 2 1
+
+Function Description
+
+Complete the function:
+
+climbingLeaderboard
+
+Parameters
+
+ranked[n] → leaderboard scores in descending order
+
+player[m] → player's game scores
+
+Returns
+
+int[m] → player's rank after each game
+
+Input Format
+n
+ranked scores
+m
+player scores
+Example:
+7
+100 100 50 40 40 20 10
+4
+5 25 50 120
+
+Output
+6
+4
+2
+1
+
+💡 Approach
+
+Remove duplicate scores from the leaderboard.
+
+Traverse from the end of leaderboard.
+
+Compare each player score with leaderboard scores.
+
+Move pointer left until the correct rank is found.
+
+Since player scores are ascending, the pointer only moves one direction, making the solution efficient.
+⏱ Time Complexity
+O(n + m)
+n = leaderboard size
+m = player scores
