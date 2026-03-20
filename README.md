@@ -508,3 +508,57 @@ Output:
 Time: O(n × digits)
 
 Space: O(1)
+### HACKERRANK 13: VIRAL ADVERTISING
+📘 Question: Viral Advertising
+
+HackerLand Enterprise is adopting a new viral advertising strategy.
+
+On the first day, the advertisement is shared with 5 people.
+
+Each day:
+
+Half of the people who receive the ad like it (floor(shared / 2)).
+
+Each person who likes it shares it with 3 friends the next day.
+
+No person receives the ad more than once.
+
+🔹 Task
+
+Given an integer n, representing the number of days, determine the total cumulative likes after n days.
+
+🔹 Input
+
+A single integer:
+
+n
+🔹 Output
+
+An integer representing total likes after n days.
+
+🔹 Example
+
+Input
+
+3
+
+Output
+
+9
+🧠 Explanation
+
+Start with shared = 5
+
+Each day:
+
+Compute liked = shared / 2
+
+Add to total
+
+Update shared = liked * 3
+
+⏱ Complexity
+
+Time: O(n)
+
+Space: O(1)
