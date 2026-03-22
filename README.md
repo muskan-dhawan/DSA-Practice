@@ -604,3 +604,46 @@ result=(s+m−2)modn+1
 ✅ Sample Output
 2
 3
+### HACKERRANK 15 : CIRCULAR ARRAY ROTATION
+Given an array of integers, perform right circular rotation k times.
+In one rotation, the last element moves to the front.
+After performing all rotations, answer q queries.
+Each query asks: what is the value at index i in the rotated array?
+📥 Input
+n k q
+array elements
+queries (each on new line)
+📌 Example Input
+3 2 3
+1 2 3
+0
+1
+2
+✅ Answer
+🔄 Step 1: Perform Rotations
+
+Initial array:
+
+[1, 2, 3]
+
+After 1 rotation:
+
+[3, 1, 2]
+
+After 2 rotations:
+
+[2, 3, 1]
+🔍 Step 2: Answer Queries
+Query Index	Value
+0	2
+1	3
+2	1
+📤 Output
+2
+3
+1
+💡 Optimized Logic (No Rotation Needed)
+
+Instead of rotating, use:
+
+index = (q - k + n) % n
