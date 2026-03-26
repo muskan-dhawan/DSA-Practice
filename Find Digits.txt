@@ -1,0 +1,63 @@
+Question: Find Digits
+
+Given an integer n, count how many of its digits divide n evenly.
+
+📌 Rules:
+A digit is a divisor if n % digit == 0
+Ignore digit 0 (division by zero is undefined)
+🔢 Input Format
+First line: integer t (number of test cases)
+Next t lines: each contains an integer n
+📤 Output Format
+For each test case, print the count of digits that divide n
+🧪 Sample Input
+2
+12
+1012
+✅ Sample Output
+2
+3
+💡 Solution (Java Code)
+import java.io.*;
+import java.util.*;
+
+class Result {
+
+    public static int findDigits(int n) {
+        int original = n;
+        int count = 0;
+
+        while (n > 0) {
+            int digit = n % 10;
+
+            if (digit != 0 && original % digit == 0) {
+                count++;
+            }
+
+            n = n / 10;
+        }
+
+        return count;
+    }
+}
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int t = Integer.parseInt(br.readLine());
+
+        while (t-- > 0) {
+            int n = Integer.parseInt(br.readLine());
+            System.out.println(Result.findDigits(n));
+        }
+    }
+}
+⚙️ How it works
+Extract each digit using % 10
+Check if it divides the original number
+Count valid digits
+Repeat until number becomes 0
+🚀 Key Points
+Skip 0
+Use original number for division check
+Time complexity: O(digits)
