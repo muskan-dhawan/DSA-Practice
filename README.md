@@ -768,3 +768,32 @@ c = [0,0,1,0,0,1,1,0], k = 2
 Output:
 
 92 
+### HACKERRANK 18: FIND DIGITS 
+Question: Find Digits
+
+Given an integer n, count how many of its digits divide n evenly.
+
+📌 Rules:
+A digit is a divisor if n % digit == 0
+Ignore digit 0 (division by zero is undefined)
+🔢 Input Format
+First line: integer t (number of test cases)
+Next t lines: each contains an integer n
+📤 Output Format
+For each test case, print the count of digits that divide n
+🧪 Sample Input
+2
+12
+1012
+✅ Sample Output
+2
+3
+⚙️ How it works
+Extract each digit using % 10
+Check if it divides the original number
+Count valid digits
+Repeat until number becomes 0
+🚀 Key Points
+Skip 0
+Use original number for division check
+Time complexity: O(digits)
