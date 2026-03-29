@@ -845,3 +845,105 @@ hackerhappy
 hackerrank
 9
 Output:Yes
+### HACKERRANK 21: SHERLOCK AND SQUARES
+Problem: Sherlock and Squares
+
+Sherlock and Squares
+
+Watson likes to challenge Sherlock's math ability. He gives Sherlock a starting value and an ending value that define a range of integers (inclusive).
+
+Sherlock must determine how many square integers exist within that range.
+
+📌 Definition
+
+A square integer is a number that is the square of an integer.
+
+Examples:
+
+1 = 
+1
+2
+1
+2
+4 = 
+2
+2
+2
+2
+9 = 
+3
+2
+3
+2
+16 = 
+4
+2
+4
+2
+🧾 Function Description
+
+Complete the function:
+
+static int squares(int a, int b)
+Parameters:
+a: lower bound (inclusive)
+b: upper bound (inclusive)
+Returns:
+An integer → number of perfect squares between a and b
+📥 Input Format
+First line: integer q (number of test cases)
+Next q lines: each contains two integers a and b
+📤 Output Format
+For each test case, print the number of square integers in the range
+🔢 Constraints
+1
+≤
+𝑞
+≤
+100
+1≤q≤100
+1
+≤
+𝑎
+≤
+𝑏
+≤
+10
+9
+1≤a≤b≤10
+9
+🧪 Sample Input
+2
+3 9
+17 24
+✅ Sample Output
+2
+0
+📖 Explanation
+Test Case 1: (3, 9)
+
+Square numbers in range:
+
+4 (
+2
+2
+2
+2
+)
+9 (
+3
+2
+3
+2
+)
+
+→ Total = 2
+
+Test Case 2: (17, 24)
+
+No perfect squares in this range
+
+→ Total = 0
+
+🎯 Goal
+Efficiently count how many numbers between a and b are perfect squares.
