@@ -947,3 +947,48 @@ No perfect squares in this range
 
 🎯 Goal
 Efficiently count how many numbers between a and b are perfect squares.
+### HACKERRANK 22: LIBRARY FINE
+Problem: Library Fine (Advanced Version)
+
+A library charges fines based on how late a book is returned.
+
+💰 Fine Rules:
+If returned after the due year → fine = 12000
+Else if returned in the same year but after the due month → fine = 400 × number of months late
+Else if returned in the same month and year but after the due day → fine = 20 × number of days late
+If returned on time or early → fine = 0
+📥 Input
+
+Two lines:
+
+d1 m1 y1   (return date)
+d2 m2 y2   (due date)
+📤 Output
+
+Print the total fine.
+
+🧪 Example
+Input:
+10 7 2022
+5 7 2022
+Output:
+100
+Explanation:
+Same month & year
+5 days late → 5 × 20 = 100
+🧠 Your Task
+
+👉 Write a function like:
+
+int calculateFine(int d1, int m1, int y1, int d2, int m2, int y2)
+🔥 Challenge Twist
+
+After solving, try this:
+
+👉 Add a rule:
+
+Maximum fine = 5000
+🎯 Goal
+You should be able to instantly think:
+Year > Month > Day
+(priority order)
