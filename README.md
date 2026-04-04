@@ -1108,3 +1108,47 @@ Output:
 12
 1≤n≤10
 12
+### HACKERRANK 26: JAVA STRINGS DOCUMENTATION
+HackerRank – Java Strings Introduction
+
+A string is a sequence of characters.
+
+You are given two strings A and B consisting of lowercase English letters.
+
+🔹 Your task is to perform 3 operations:
+1️⃣ Sum of lengths
+
+Print the sum of the lengths of string A and B.
+
+2️⃣ Lexicographical comparison
+
+Check if string A is lexicographically greater than B.
+
+👉 If A > B, print:
+
+Yes
+
+Otherwise print:
+
+No
+3️⃣ Capitalization
+
+Capitalize the first letter of both strings and print them on one line separated by a space.
+
+📥 Input Format
+A
+B
+First line → string A
+Second line → string B
+📤 Output Format
+(sum of lengths)
+Yes/No
+Capitalized A + space + Capitalized B
+✅ Example
+Input:
+hello
+java
+Output:
+9
+No
+Hello Java
