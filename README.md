@@ -1152,3 +1152,34 @@ Output:
 9
 No
 Hello Java
+### HACKERRANK 27: JAVA SUBSTRING
+Java Substring – Problem
+
+Given a string S, and two indices start and end, print a substring consisting of all characters in the range from start to end.
+
+You can use Java’s substring() method to solve this problem.
+
+📥 Input Format
+First line: a string S
+Second line: two space-separated integers start and end
+📤 Output Format
+
+Print the substring from index start to end.
+
+🔒 Constraints
+The string contains only English letters (a–z, A–Z)
+🧪 Sample Input
+Helloworld
+3 7
+✅ Sample Output
+lowo
+💡 Explanation
+
+String:
+
+H e l l o w o r l d
+0 1 2 3 4 5 6 7 8 9
+
+From index 3 to 7, the substring is:
+
+lowo
