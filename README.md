@@ -1230,3 +1230,42 @@ H e l l o w o r l d
 From index 3 to 7, the substring is:
 
 lowo
+### HACKERRANK 29: PATTERN SYNTAX CHECKER
+Problem: Pattern Syntax Checker
+
+Using regular expressions (regex), we can match patterns in text. Before using a regex, we must ensure that its syntax is valid.
+
+📌 Task
+
+You are given several strings representing regex patterns. For each pattern:
+
+Print "Valid" if the regex syntax is correct
+Print "Invalid" if the regex syntax is incorrect
+
+👉 A regex is considered valid if it can be successfully compiled using:
+
+Pattern.compile(pattern)
+📥 Input Format
+First line contains an integer T → number of test cases
+Next T lines each contain a string → the regex pattern
+📤 Output Format
+
+For each test case:
+
+Print "Valid" or "Invalid" on a new line
+🔢 Constraints
+1 ≤ T ≤ 100
+Pattern consists of printable ASCII characters
+🧪 Sample Input
+3
+([A-Z])(.+)
+[AZ[a-z](a-z)
+batcatpat(nat
+✅ Sample Output
+Valid
+Invalid
+Invalid
+💡 Explanation
+([A-Z])(.+) → correct grouping → ✅ Valid
+[AZ[a-z](a-z) → mismatched brackets → ❌ Invalid
+batcatpat(nat → missing ) → ❌ Invalid
