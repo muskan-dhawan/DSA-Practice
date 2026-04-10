@@ -1308,3 +1308,94 @@ or
 false
 🔹 Constraints
 String may contain any ASCII characters
+### HACKERRANK 31: REGEX SUPLICATE WORD REMOVAL
+Problem Summary
+
+You are given N sentences.
+For each sentence, remove duplicate words such that:
+
+Matching is case-insensitive
+Only the first occurrence of each word is kept
+The final output must preserve the original casing of the first occurrence
+📥 Input Format
+First line: Integer N → number of sentences
+Next N lines: Each line contains a sentence
+📤 Output Format
+Print each sentence after removing repeated words
+🔒 Constraints
+Sentences contain only:
+English letters (a–z, A–Z)
+Whitespaces
+Length is within reasonable bounds
+🔍 Approach
+
+We solve this using Regular Expressions (RegEx) with backreferences.
+
+✅ Step 1: Match Repeated Words
+
+Use this regex:
+
+"\\b(\\w+)(\\b\\W+\\b\\1\\b)+"
+🔎 Explanation
+\\b → word boundary
+(\\w+) → captures a word → Group 1
+( ... )+ → matches repeated occurrences
+\\1 → refers to the same word captured before
+
+👉 This matches patterns like:
+
+"to To tO"
+"bye bye bye"
+✅ Step 2: Case-Insensitive Matching
+Pattern.CASE_INSENSITIVE
+
+👉 Ensures:
+
+"Hello hello" → duplicate
+"Ab aB" → duplicate
+✅ Step 3: Replace Duplicates
+input.replaceAll(m.group(), m.group(1));
+🔎 Meaning
+
+m.group() → entire matched sequence
+
+"to To tO"
+
+m.group(1) → first word
+
+"to"
+
+👉 Replace full sequence with first occurrence
+
+🔁 Algorithm Flow
+
+For each sentence:
+
+Create matcher using regex
+Find duplicate word sequences
+Replace them with first occurrence
+Repeat until no duplicates remain
+🧪 Sample Walkthrough
+Input
+1
+Hello hello Ab aB
+Matching
+"Hello hello" → duplicate
+"Ab aB" → duplicate
+Output
+Hello Ab
+⚠️ Important Notes
+Do NOT change original structure of code
+Only fill:
+Regex
+Pattern flag
+replaceAll arguments
+Matching must be case-insensitive
+Output must preserve original casing of first word
+🎯 Final Code Snippet
+String regex = "\\b(\\w+)(\\b\\W+\\b\\1\\b)+";
+Pattern p = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
+
+while (m.find()) {
+    input = input.replaceAll(m.group(), m.group(1));
+}
