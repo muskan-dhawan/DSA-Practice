@@ -1399,3 +1399,33 @@ Pattern p = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
 while (m.find()) {
     input = input.replaceAll(m.group(), m.group(1));
 }
+### HACKERRANK 32: STRING STREAM
+Problem: Parse Comma-Separated Integers (StringStream)
+
+You are given a string containing integers separated by commas. Your task is to extract these integers and store them in a vector.
+
+Function Signature
+vector<int> parseInts(string str);
+Input
+A single string str consisting of integers separated by commas.
+Example: "23,4,56"
+Output
+Return a vector of integers parsed from the string.
+Each integer should be printed on a new line.
+Example
+
+Input:
+
+23,4,56
+
+Output:
+
+23
+4
+56
+Explanation
+The input string contains numbers separated by commas.
+You need to split the string and convert each number into an integer.
+Constraints
+The length of the string is less than 1000.
+All values in the string are valid integers.
