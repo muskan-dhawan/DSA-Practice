@@ -1497,3 +1497,50 @@ n = 6
 c = [0, 0, 0, 0, 1, 0]
 Output:
 3
+### HACKERRANK 35: EQUALIZE THE ARRAY
+Equalize the Array (HackerRank)
+
+Given an array of integers, determine the minimum number of elements to delete so that all remaining elements are equal.
+
+📥 Input
+An integer n — size of the array
+An array arr of n integers
+📤 Output
+Return an integer representing the minimum deletions required
+📌 Example
+
+Input:
+
+n = 5
+arr = [3, 3, 2, 1, 3]
+
+Output:
+
+2
+
+Explanation:
+
+The number 3 appears most frequently (3 times)
+Remove 2 and 1
+Remaining array → [3, 3, 3]
+🔒 Constraints
+1
+≤
+𝑛
+≤
+100
+1≤n≤100
+1
+≤
+𝑎
+𝑟
+𝑟
+[
+𝑖
+]
+≤
+100
+1≤arr[i]≤100
+💡 Key Idea
+
+Keep the most frequent element and delete all others.
