@@ -1613,3 +1613,70 @@ Invalid
 
 👉 Convert all conditions into a single regex pattern
 instead of writing multiple checks.
+### HACKERRANK 37: BOX IT!
+Problem: Box It!
+
+Design a class named Box whose dimensions are integers and private to the class. The dimensions are:
+
+length (l)
+breadth (b)
+height (h)
+🔧 Requirements
+1. Constructors
+Box()
+→ Initializes l = b = h = 0
+Box(int l, int b, int h)
+→ Initializes the box with given dimensions
+Box(Box B)
+→ Copy constructor (copies dimensions from another box)
+2. Member Functions
+int getLength() → returns length
+int getBreadth() → returns breadth
+int getHeight() → returns height
+long long CalculateVolume() → returns volume of box
+3. Operator Overloading
+🔹 Overload < operator
+
+A box A is considered less than box B if:
+
+A.l < B.l
+OR if A.l == B.l AND A.b < B.b
+OR if A.l == B.l, A.b == B.b AND A.h < B.h
+🔹 Overload << operator
+
+Printing a box should display:
+
+l b h
+
+(on a single line, space-separated)
+
+🧪 Input Format
+First line: integer n (number of operations)
+Next n lines: each contains a query of type:
+Type	Operation
+1	Print current box
+2 l b h	Create new box and assign to current
+3 l b h	Compare new box with current
+4	Print volume of current box
+5	Copy current box and print
+📌 Example
+
+Input:
+
+5
+2 2 3 4
+1
+4
+5
+3 3 4 5
+
+Output:
+
+2 3 4
+2 3 4
+24
+2 3 4
+Greater
+⚠️ Constraints
+Dimensions are integers
+No two boxes compared will have all dimensions equal
