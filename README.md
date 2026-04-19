@@ -1711,3 +1711,58 @@ carmack
 10
 📌 Sample Output
 15 john carmack 10
+### HACKERRANK 39: TAG CONTENT EXTRACTOR
+Problem: Tag Content Extractor
+
+In a tag-based language like XML or HTML, contents are enclosed between a start tag and an end tag:
+
+<tag>content</tag>
+
+The end tag always starts with /, and the tag names must match.
+
+📌 Task
+
+Given multiple lines of text containing tag-based expressions, extract and print the content enclosed within valid matching tags.
+
+✅ Rules
+The start tag and end tag must have the same name
+❌ <h1>Hello</h2> → invalid
+
+Tags can be nested, but:
+
+Only extract content from the innermost valid tags
+Ignore content that contains nested tags
+
+Example:
+
+<h1><a>valid</a>invalid</h1>
+
+✔ Output: valid
+❌ Ignore: invalid
+
+Tags may contain any printable characters
+📥 Input Format
+First line: integer T (number of test cases)
+Next T lines: each line contains a string with tags
+📤 Output Format
+For each test case:
+Print each valid content on a new line
+
+If no valid content exists, print:
+
+None
+🧪 Sample Input
+4
+<h1>Nayeem loves counseling</h1>
+<h1><h1>Sanjay has no watch</h1></h1><par>So wait for a while</par>
+<Amee>safat codes like a ninja</amee>
+<SA premium>Imtiaz has a secret crush</SA premium>
+🧾 Sample Output
+Nayeem loves counseling
+Sanjay has no watch
+So wait for a while
+None
+Imtiaz has a secret crush
+🎯 Goal
+
+Write code to parse each line and extract only valid tag content.
