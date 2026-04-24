@@ -1926,3 +1926,34 @@ Compare all other students with her total score
 🔍 Explanation
 Kristen’s total = 30 + 40 + 45 + 10 + 10 = 135
 Only one student has a higher total → output = 1
+###  HACKERRANK 44: JAVA BIGINTEGER
+Java BigInteger
+
+In this problem, you have to add and multiply huge numbers! These numbers are so big that you can't contain them in any ordinary data types like a long integer.
+
+Use the power of Java's BigInteger class and solve this problem.
+
+Input Format
+
+There will be two lines containing two numbers:
+
+The first line contains integer a
+The second line contains integer b
+Constraints
+a and b are non-negative integers
+Each number can have up to 200 digits
+Output Format
+
+Print two lines:
+
+First line: a + b
+Second line: a × b
+
+Do not print any leading zeros.
+
+Sample Input
+1234
+20
+Sample Output
+1254
+24680
