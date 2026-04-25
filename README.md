@@ -1957,3 +1957,54 @@ Sample Input
 Sample Output
 1254
 24680
+### HACKERRANK 45: INHERITED CODE
+Inherited Code (HackerRank)
+
+You are given a piece of inherited code that validates usernames for a website.
+
+The function checkUsername(string username):
+
+Throws an exception if the username length is less than 5
+Returns:
+true → if valid
+false → if invalid (contains "ww" as consecutive characters)
+
+However, the exception BadLengthException is not defined.
+
+🎯 Your Task
+
+Define the class:
+
+BadLengthException
+
+such that:
+
+It stores the length of the username
+When caught, calling what() returns the length as a string
+📥 Input Format
+First line: integer T (number of test cases)
+Next T lines: each contains a username string
+📤 Output Format
+
+For each test case, output:
+
+"Valid" → if username is valid
+"Invalid" → if username contains "ww"
+"Too short: n" → if length < 5 (where n is length)
+📌 Constraints
+Username contains only English letters
+1 ≤ T ≤ ? (typical constraint)
+1 ≤ length(username)
+🧪 Sample Input
+3
+Peter
+Me
+Arxwwz
+✅ Sample Output
+Valid
+Too short: 2
+Invalid
+💡 Explanation
+"Peter" → length ≥ 5, no "ww" → Valid
+"Me" → length = 2 → Exception → Too short: 2
+"Arxwwz" → contains "ww" → Invalid
