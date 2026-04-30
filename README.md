@@ -2118,3 +2118,40 @@ Sum = 19
 ⚠️ Constraints
 Array size is fixed: 6 × 6
 Values range: -9 ≤ arr[i][j] ≤ 9
+### HACKERRANK 49: JAVA SUBARRAY
+Java Subarray – Problem Statement
+
+A subarray of an array is a sequence of contiguous elements from the array.
+
+For example, if the array is:
+
+[1, -2, 4]
+
+Then valid subarrays are:
+
+[1], [1, -2], [1, -2, 4], [-2], [-2, 4], [4]
+📌 Task
+
+Given an array of integers, find the number of subarrays whose sum is negative.
+
+📥 Input Format
+First line: An integer n (size of array)
+Second line: n space-separated integers
+📤 Output Format
+Print a single integer → number of subarrays having negative sum
+🔒 Constraints
+1 ≤ n ≤ 100
+-10^4 ≤ arr[i] ≤ 10^4
+🧪 Example
+
+Input:
+
+5
+1 -2 4 -5 1
+
+Output:
+
+9
+🧠 Explanation
+
+There are 9 subarrays whose total sum is negative.
