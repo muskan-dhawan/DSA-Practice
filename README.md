@@ -2153,5 +2153,58 @@ Output:
 
 9
 🧠 Explanation
-
 There are 9 subarrays whose total sum is negative.
+### HACKERRANK 50: JAVA ARRAYLIST
+Problem: Java Arraylist
+
+Sometimes it's better to use dynamic-size arrays. Java’s ArrayList provides this feature.
+
+🧾 Problem Statement
+
+You are given N lines of input. Each line contains zero or more integers.
+
+After that, you will be given Q queries. Each query asks you to:
+
+👉 Print the number located at position y in line x
+
+If that position does not exist, print:
+
+ERROR!
+📥 Input Format
+First line: integer N (number of lines)
+Next N lines:
+Each line starts with an integer d (number of elements in that line)
+Followed by d space-separated integers
+Next line: integer Q (number of queries)
+Next Q lines:
+Each contains two integers x y
+📤 Output Format
+For each query:
+Print the element at position y in line x
+If it doesn’t exist → print "ERROR!"
+⚠️ Important Notes
+Indexing is 1-based (not 0-based)
+Some lines may have zero elements
+You must handle invalid accesses safely
+📌 Sample Input
+5
+5 41 77 74 22 44
+1 12
+4 37 34 36 52
+0
+3 20 22 33
+5
+1 3
+3 4
+3 1
+4 3
+5 5
+📌 Sample Output
+74
+52
+37
+ERROR!
+ERROR!
+💡 Explanation (Short)
+Query (1,3) → 3rd element of line 1 → 74
+Query (4,3) → line 4 is empty → ERROR!
