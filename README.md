@@ -2208,3 +2208,71 @@ ERROR!
 💡 Explanation (Short)
 Query (1,3) → 3rd element of line 1 → 74
 Query (4,3) → line 4 is empty → ERROR!
+### HACKERRANK 51: JAVA 1D ARRAY(PART2)
+HackerRank – Java 1D Array (Part 2)
+Let's play a game on an array!
+You're standing at index 0 of an n-element array named game.
+From any index i (where 0 ≤ i < n), you can perform one of the following moves:
+
+
+Move Backward:
+If index i - 1 exists and contains 0, you can move to i - 1.
+
+
+Move Forward:
+If index i + 1 exists and contains 0, you can move to i + 1.
+
+
+Leap Forward:
+If index i + leap contains 0, you can jump to i + leap.
+
+
+
+Winning Condition
+You win if:
+
+
+You reach an index >= n (move outside the array), or
+
+
+From your current position, you can move/jump beyond the last index.
+
+
+
+Task
+Complete the function:
+public static boolean canWin(int leap, int[] game)
+Return:
+
+
+true → if you can win
+
+
+false → otherwise
+
+
+
+Example
+Input:
+game = [0, 0, 0, 0, 0]leap = 3
+Moves:
+
+
+Start at index 0
+
+
+Jump to index 3
+
+
+Move to index 5 (outside array)
+
+
+Output:
+true
+
+Another Example
+Input:
+game = [0, 1, 0]leap = 1
+Output:
+false
+Because index 1 is blocked and you cannot reach outside the array.
