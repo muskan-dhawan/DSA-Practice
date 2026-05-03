@@ -2276,3 +2276,151 @@ game = [0, 1, 0]leap = 1
 Output:
 false
 Because index 1 is blocked and you cannot reach outside the array.
+### HACKERRANK 52: VIRTUAL FUNCTIONS
+Virtual Functions
+This problem is to get you familiar with virtual functions.
+Create three classes:
+
+
+Person
+
+
+Professor
+
+
+Student
+
+
+The class Person should have data members:
+
+
+name
+
+
+age
+
+
+The classes Professor and Student should inherit from the class Person.
+
+Professor Class
+The class Professor should have:
+
+
+publications
+
+
+cur_id
+
+
+Functions:
+
+
+getdata() → reads:
+
+
+name
+
+
+age
+
+
+publications
+
+
+
+
+putdata() → prints:
+
+
+name age publications cur_id
+
+
+
+
+
+Student Class
+The class Student should have:
+
+
+marks → array of size 6
+
+
+cur_id
+
+
+Functions:
+
+
+getdata() → reads:
+
+
+name
+
+
+age
+
+
+marks of 6 subjects
+
+
+
+
+putdata() → prints:
+
+
+name age sum_of_marks cur_id
+
+
+
+
+
+ID Rule
+For every object created:
+
+
+Professor IDs should be assigned sequentially starting from 1
+
+
+Student IDs should be assigned sequentially starting from 1
+
+
+
+Requirement
+Solve using:
+
+
+Virtual functions
+
+
+Constructors
+
+
+Static variables
+
+
+
+Input Format
+First line contains integer n → number of objects.
+For each object:
+
+
+If input is 1 → create Professor
+
+
+If input is 2 → create Student
+
+
+Then take corresponding input values.
+
+Output Format
+For each object print:
+Professor
+name age publications id
+Student
+name age sum_of_marks id
+
+Sample Input
+41Walter 56 992Jesse 18 50 48 97 76 34 982Pinkman 22 10 12 0 18 45 501White 58 87
+
+Sample Output
+Walter 56 99 1Jesse 18 403 1Pinkman 22 135 2White 58 87 2
