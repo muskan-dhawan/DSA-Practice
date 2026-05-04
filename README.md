@@ -2424,3 +2424,79 @@ Sample Input
 
 Sample Output
 Walter 56 99 1Jesse 18 403 1Pinkman 22 135 2White 58 87 2
+### HACKERRANK 53: JAVA LIST
+Java List
+For this problem, you have to perform two types of operations on a list:
+1. Insert
+Insert an integer y at index x.
+Format:
+Insertx y
+
+2. Delete
+Delete the element present at index x.
+Format:
+Deletex
+
+Task
+Given a list of integers, perform q queries on the list. After completing all queries, print the final modified list as space-separated integers.
+
+Input Format
+
+
+First line contains an integer n → number of elements in the list.
+
+
+Second line contains n space-separated integers.
+
+
+Third line contains an integer q → number of queries.
+
+
+Next q queries follow:
+
+
+If query is "Insert":
+
+
+Next line contains two integers x y
+
+
+If query is "Delete":
+
+
+Next line contains one integer x
+
+
+
+Constraints
+
+
+1 ≤ n ≤ 4000
+
+
+Each element is a 32-bit integer.
+
+
+
+Output Format
+Print the final list as space-separated integers.
+
+Sample Input
+512 0 1 78 122Insert5 23Delete0
+
+Sample Output
+0 1 78 12 23
+
+Explanation
+Initial list:
+[12, 0, 1, 78, 12]
+Query 1:
+Insert 23 at index 5
+List becomes:
+[12, 0, 1, 78, 12, 23]
+Query 2:
+Delete element at index 0
+List becomes:
+[0, 1, 78, 12, 23]
+Final output:
+0 1 78 12 23
