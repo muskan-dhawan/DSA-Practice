@@ -2500,3 +2500,105 @@ List becomes:
 [0, 1, 78, 12, 23]
 Final output:
 0 1 78 12 23
+### HACKERRANK 54: ABSTRACT CLASSES
+Abstract Classes - Polymorphism (HackerRank)
+
+Abstract base classes in C++ can only be used as base classes. Thus, they are allowed to have virtual member functions without definitions.
+
+A cache stores data so future requests can be served faster.
+
+One popular cache replacement policy is:
+
+Least Recently Used (LRU)
+
+It removes the least recently used item first.
+
+Example
+
+Cache capacity = 5
+
+Current state (Most recently used → Least recently used):
+
+5 3 2 1 4
+
+If next key is 1 (cache hit):
+
+Updated state:
+
+1 5 3 2 4
+
+If next key is 6 (cache miss):
+
+Updated state:
+
+6 1 5 3 2
+
+Here 4 is removed because it was the least recently used.
+
+Given Abstract Base Class Cache
+class Cache{
+protected:
+    map<int,Node*> mp;
+    int cp;
+    Node* tail;
+    Node* head;
+
+    virtual void set(int, int) = 0;
+    virtual int get(int) = 0;
+};
+
+You need to implement:
+
+class LRUCache : public Cache
+Functions to Implement
+set(key, value)
+Insert/update the key-value pair
+If key already exists → update value and make it most recently used
+If cache is full → remove least recently used item
+get(key)
+Return value if key exists
+Otherwise return -1
+Accessing a key makes it most recently used
+Input Format
+First line contains:
+N → number of commands
+capacity → cache capacity
+
+Next N lines contain commands:
+
+Get command
+get key
+Set command
+set key value
+Constraints
+
+(As provided in HackerRank)
+
+Output Format
+
+For every get command, print:
+
+value if found
+-1 otherwise
+Sample Input
+3 1
+set 1 2
+get 1
+get 2
+Sample Output
+2
+-1
+Explanation
+
+Capacity = 1
+
+set 1 2 → insert (1,2)
+get 1 → found → print 2
+get 2 → not found → print -1
+Goal
+
+Implement LRUCache using:
+
+Hash Map
+Doubly Linked List
+Polymorphism / Abstract Classes
