@@ -2602,3 +2602,87 @@ Implement LRUCache using:
 Hash Map
 Doubly Linked List
 Polymorphism / Abstract Classes
+### HACKERRANK 55: JAVA MAP
+Java Map
+You are given a phone book that consists of people's names and their phone numbers. After that, you will be given some person's name as a query. For each query, print the phone number of that person.
+Input Format
+
+
+The first line contains an integer n, denoting the number of entries in the phone book.
+
+
+The next n pairs of lines contain:
+
+
+A person's name
+
+
+Their phone number
+
+
+
+
+After that, there are an unknown number of query lines. Read queries until end-of-file (EOF).
+
+
+Constraints
+
+
+A person's name consists of only lowercase English letters.
+
+
+It may be in the format:
+
+
+"first-name"
+
+
+or "first-name last-name"
+
+
+
+
+Each phone number has exactly 8 digits and contains no leading zeros.
+
+
+Output Format
+For each query:
+
+
+Print "Not found" if the person does not exist in the phone book.
+
+
+Otherwise print:
+
+
+name=phoneNumber
+
+Sample Input
+3uncle sam99912222tom11122222harry12299933uncle samuncle tomharry
+Sample Output
+uncle sam=99912222Not foundharry=12299933
+
+Explanation
+Phone book entries:
+
+
+uncle sam → 99912222
+
+
+tom → 11122222
+
+
+harry → 12299933
+
+
+Queries:
+
+
+uncle sam → found
+
+
+uncle tom → not found
+
+
+harry → found
+
