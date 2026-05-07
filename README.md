@@ -2686,3 +2686,71 @@ uncle tom → not found
 
 harry → found
 
+### HACKERRANK 56: JAVA STACK
+Java Stack
+
+In computer science, a stack or LIFO (Last In First Out) is an abstract data type that serves as a collection of elements, with two principal operations:
+
+push → adds an element to the collection
+pop → removes the last element that was added
+
+A string containing only parentheses is balanced if:
+
+It is an empty string
+If A and B are correct, then AB is correct
+If A is correct, then (A), {A}, and [A] are also correct
+Examples of balanced strings:
+{}()
+[{()}]
+({()})
+Examples of unbalanced strings:
+{}(
+({)}
+[[
+}{
+Task
+
+Given a string containing only brackets:
+
+()
+{}
+[]
+
+Determine whether the string is balanced or not.
+
+Print:
+
+true → if balanced
+false → if not balanced
+Input Format
+
+Multiple lines of input.
+
+Each line contains a single non-empty string.
+
+Read input until EOF (End of File).
+
+Output Format
+
+For each input line, print:
+
+true
+
+or
+
+false
+Sample Input
+{}()
+({()})
+{}(
+[]
+Sample Output
+true
+true
+false
+true
+Explanation
+{ } ( ) → properly matched → true
+( { ( ) } ) → properly nested → true
+{ } ( → missing closing bracket → false
+[ ] → balanced → true
