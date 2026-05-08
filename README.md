@@ -2754,3 +2754,31 @@ Explanation
 ( { ( ) } ) → properly nested → true
 { } ( → missing closing bracket → false
 [ ] → balanced → true
+### HACKERRANK 57: VECTOR-SORT
+Question: Vector-Sort
+
+You are given N integers. Sort the N integers and print the sorted order.
+
+Store the integers in a vector. Vectors are sequence containers representing arrays that can change in size.
+
+Useful Vector Operations
+vector<int> v;          // creates an empty vector
+int size = v.size();    // returns size of vector
+v.push_back(x);         // inserts x into vector
+v.pop_back();           // removes last element
+sort(v.begin(), v.end()); // sorts vector
+Input Format
+First line contains integer N.
+Second line contains N space-separated integers.
+Constraints
+1≤N≤10
+5
+Output Format
+
+Print the integers in sorted order in a single line separated by spaces.
+
+Sample Input
+5
+1 6 10 8 4
+Sample Output
+1 4 6 8 10
