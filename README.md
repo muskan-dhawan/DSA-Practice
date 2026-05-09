@@ -2782,3 +2782,93 @@ Sample Input
 1 6 10 8 4
 Sample Output
 1 4 6 8 10
+### HACKERRANK 58: QUEEN'S ATTACK
+Queen's Attack II
+You will be given a square chess board with one queen and a number of obstacles placed on it. Determine how many squares the queen can attack.
+A queen is standing on an n×nn \times nn×n chessboard. The chess board's rows are numbered from 1 to nnn, going from bottom to top. Its columns are numbered from 1 to nnn, going from left to right.
+The queen is standing at position (rq,cq)(r_q, c_q)(rq​,cq​). In a single move, she can attack any square in any of the eight directions:
+
+
+Left
+
+
+Right
+
+
+Up
+
+
+Down
+
+
+Four diagonals
+
+
+Obstacles block the queen’s path. The queen cannot move onto or beyond an obstacle.
+Your task is to determine the number of squares the queen can attack.
+
+Function Description
+Complete the function:
+queensAttack(int n, int k, int r_q, int c_q, List<List<Integer>> obstacles)
+Parameters:
+
+
+n → size of the chessboard
+
+
+k → number of obstacles
+
+
+r_q → queen's row position
+
+
+c_q → queen's column position
+
+
+obstacles → positions of obstacles
+
+
+Returns:
+
+
+Integer representing the number of squares the queen can attack.
+
+
+
+Input Format
+
+
+First line: two integers n and k
+
+
+Second line: two integers r_q and c_q
+
+
+Next k lines: obstacle coordinates
+
+
+
+Constraints
+
+
+1≤n≤1051 \le n \le 10^51≤n≤105
+
+
+0≤k≤1050 \le k \le 10^50≤k≤105
+
+
+
+Sample Input 0
+4 04 4
+Sample Output 0
+9
+
+Sample Input 1
+5 34 35 54 22 3
+Sample Output 1
+10
+
+Sample Input 2
+1 01 1
+Sample Output 2
+0
