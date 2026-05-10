@@ -2872,3 +2872,57 @@ Sample Input 2
 1 01 1
 Sample Output 2
 0
+### HACKERRANK 59: JAVA DEQUEUE
+Java Dequeue
+In computer science, a double-ended queue (deque, pronounced “deck”) is an abstract data type that generalizes a queue, where elements can be added to or removed from both the front and the back.
+In this problem, you are given n integers. You need to find the maximum number of unique integers among all possible contiguous subarrays of size m.
+Input Format
+
+
+The first line contains two integers n and m:
+
+
+n = total number of integers
+
+
+m = size of the subarray
+
+
+
+
+The second line contains n space-separated integers.
+
+
+Constraints
+
+
+1 ≤ n ≤ 10^5
+
+
+1 ≤ m ≤ n
+
+
+Output Format
+Print the maximum number of unique integers among all contiguous subarrays of size m.
+
+Sample Input
+6 35 3 5 2 3 2
+Sample Output
+3
+Explanation
+Possible subarrays of size 3:
+
+
+[5, 3, 5] → 2 unique numbers
+
+
+[3, 5, 2] → 3 unique numbers
+
+
+[5, 2, 3] → 3 unique numbers
+
+
+[2, 3, 2] → 2 unique numbers
+
+
+The maximum number of unique integers is 3.
