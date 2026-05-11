@@ -2926,3 +2926,56 @@ Possible subarrays of size 3:
 
 
 The maximum number of unique integers is 3.
+### HACKERRANK 60: ACM ICPC TEAM
+HackerRank — ACM ICPC Team
+
+There are a number of people who will be attending ACM-ICPC World Finals. Each of them may be well versed in a number of topics. Given a list of topics known by each attendee, presented as binary strings, determine the maximum number of topics a 2-person team can know. Each subject has a column in the binary string, and a '1' means the subject is known while '0' means it is not.
+
+Also determine the number of teams that know the maximum number of topics.
+
+Return an integer array with two elements:
+
+The maximum number of topics known by a 2-person team
+The number of teams that know that maximum number of topics
+Function Description
+
+Complete the acmTeam function.
+
+acmTeam has the following parameter:
+string topic[n]: binary strings representing topics known by each attendee
+Returns
+int[2]:
+maximum topics known
+number of teams knowing that many topics
+Input Format
+The first line contains two space-separated integers n and m
+n = number of attendees
+m = number of topics
+Each of the next n lines contains a binary string of length m.
+Constraints
+2 ≤ n ≤ 500
+1 ≤ m ≤ 500
+Sample Input
+4 5
+10101
+11100
+11010
+00101
+Sample Output
+5
+2
+Explanation
+
+Possible teams:
+
+Team	Topics Known
+(1,2)	4
+(1,3)	5
+(1,4)	3
+(2,3)	4
+(2,4)	5
+(3,4)	5
+
+The maximum number of topics known is 5.
+
+There are 2 teams that know all 5 topics.
