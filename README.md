@@ -2979,3 +2979,80 @@ Team	Topics Known
 The maximum number of topics known is 5.
 
 There are 2 teams that know all 5 topics.
+### HACKERRANK 61: TAUM AND BDAY
+Taum and B'day
+
+Taum is planning to celebrate the birthday of his friend, Diksha. There are two types of gifts that Diksha wants from Taum: one is black and the other is white. Taum has to buy:
+
+b black gifts
+w white gifts
+
+The cost details are:
+
+Each black gift costs bc
+Each white gift costs wc
+Converting one gift from one color to the other costs z
+
+Find the minimum total cost required to buy all the gifts.
+
+Function Description
+
+Complete the function:
+
+taumBday(int b, int w, int bc, int wc, int z)
+
+It should return the minimum cost of obtaining all gifts.
+
+Input Format
+The first line contains an integer t, the number of test cases.
+For each test case:
+First line contains two integers b and w
+Second line contains three integers bc, wc, and z
+Constraints
+1 ≤ t ≤ 10
+1 ≤ b, w ≤ 10^9
+1 ≤ bc, wc, z ≤ 10^9
+Output Format
+
+For each test case, print the minimum cost required.
+
+Sample Input
+5
+10 10
+1 1 1
+5 9
+2 3 4
+3 6
+9 1 1
+7 7
+4 2 1
+3 3
+1 9 2
+Sample Output
+20
+37
+12
+35
+12
+Explanation
+Test Case 1
+
+Black and white gifts cost the same, so no conversion is needed.
+
+Total cost:
+
+10 × 1 + 10 × 1 = 20
+Test Case 3
+
+Buying black gifts directly is expensive.
+
+Instead:
+
+Buy white gifts for 1
+Convert to black for 1
+
+Black gift effective cost = 2
+
+Total:
+
+3 × 2 + 6 × 1 = 12
