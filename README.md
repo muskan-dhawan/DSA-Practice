@@ -3056,3 +3056,37 @@ Black gift effective cost = 2
 Total:
 
 3 × 2 + 6 × 1 = 12
+### HACKERRANK 62: JAVA GENERICS
+Java Generics – Problem Statement
+Write a generic method printArray that can print the elements of different types of arrays using a single method.
+You are given two arrays:
+
+
+An integer array
+
+
+A string array
+
+
+Your task is to create a generic method named printArray that prints each element of the array on a new line.
+The method should work for both integer arrays and string arrays.
+Note
+
+
+Do not use method overloading.
+
+
+Using more than one printArray method will cause your solution to fail.
+
+
+Example Output
+123HelloWorld
+Constraints
+
+
+Use Java Generics.
+
+
+The method must handle multiple data types with a single implementation.
+
+
