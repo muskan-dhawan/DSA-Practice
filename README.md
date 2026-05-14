@@ -3088,5 +3088,53 @@ Use Java Generics.
 
 
 The method must handle multiple data types with a single implementation.
+### HACKERRANK 63: JAVA COMPARATOR
+Java Comparator — Question
+
+Comparators are used to compare two objects. In this challenge, you need to create a comparator and use it to sort an array of players.
+
+A Player class is provided with two fields:
+
+String name
+int score
+
+You must create a Checker class that implements the Comparator<Player> interface and override the compare(Player a, Player b) method.
+
+Sorting Rules
+Sort players in decreasing order of score.
+If two players have the same score, sort them in alphabetical order of name.
+
+The provided driver code will:
+
+Read input
+Store players in an array
+Use your comparator to sort the array
+Print the sorted result
+Input Format
+First line contains an integer n — number of players.
+Next n lines contain:
+name
+score
+Constraints
+Multiple players can have the same name.
+Names contain lowercase English letters only.
+Sample Input
+5
+amy 100
+david 100
+heraldo 50
+aakansha 75
+aleksa 150
+Sample Output
+aleksa 150
+amy 100
+david 100
+aakansha 75
+heraldo 50
+Explanation
+aleksa has the highest score (150), so appears first.
+amy and david both have score 100.
+Since scores are equal, they are sorted alphabetically.
+Remaining players follow in decreasing score order.
 
 
