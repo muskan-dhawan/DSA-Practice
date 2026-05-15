@@ -3136,5 +3136,56 @@ aleksa has the highest score (150), so appears first.
 amy and david both have score 100.
 Since scores are equal, they are sorted alphabetically.
 Remaining players follow in decreasing score order.
+### HACKERRANK 64: JAVA SORT
+
+Question: Java Sort
+
+You are given a list of student details containing:
+
+ID
+First Name
+CGPA
+
+Your task is to sort the students based on the following rules:
+
+Sort by CGPA in decreasing order.
+If two students have the same CGPA, sort them by first name in alphabetical order.
+If both CGPA and first name are the same, sort them by ID in increasing order.
+
+No two students have the same ID.
+
+After sorting, print the first name of each student on a separate line.
+
+Input Format
+The first line contains an integer n, the number of students.
+The next n lines contain:
+
+ID Name CGPA
+
+Constraints
+Name contains only lowercase English letters.
+ID contains only integers without leading zeros.
+CGPA contains at most 2 digits after the decimal point.
+Output Format
+
+Print the first name of each student in the sorted order.
+
+Sample Input
+5
+33 Rumpa 3.68
+85 Ashis 3.85
+56 Samiha 3.75
+19 Samara 3.75
+22 Fahim 3.76
+Sample Output
+Ashis
+Fahim
+Samara
+Samiha
+Rumpa
+Explanation
+Ashis has the highest CGPA.
+Fahim comes next.
+Samara and Samiha have the same CGPA, so they are sorted alphabetically.
 
 
