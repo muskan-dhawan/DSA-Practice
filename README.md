@@ -3187,5 +3187,41 @@ Explanation
 Ashis has the highest CGPA.
 Fahim comes next.
 Samara and Samiha have the same CGPA, so they are sorted alphabetically.
+### HACKERRANK 65: VECTOR ERASE
+Vector Erase Operations
+❓ Problem Statement
 
+You are given a vector of integers. You need to perform two erase operations on the vector:
 
+Remove the element at position x (1-based index).
+Remove elements in the range [a, b) (inclusive of a, exclusive of b, 1-based indexing).
+
+After performing both operations, print:
+
+The size of the updated vector
+The elements of the updated vector
+📥 Input Format
+First line contains an integer n — size of the vector
+Second line contains n space-separated integers
+Third line contains integer x
+Fourth line contains two integers a and b
+📤 Output Format
+First line: size of vector after operations
+Second line: elements of vector
+🔒 Constraints
+1 ≤ n ≤ 10^5
+1 ≤ arr[i] ≤ 10^9
+1 ≤ x ≤ n
+1 ≤ a < b ≤ n
+🔍 Sample Input
+6
+1 4 6 2 8 9
+2
+2 4
+🔍 Sample Output
+3
+1 8 9
+🧠 Explanation
+Remove 2nd element → 1 6 2 8 9
+Remove range [2,4) → remove 6 2
+Final vector → 1 8 9
