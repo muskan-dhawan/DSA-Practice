@@ -3225,3 +3225,64 @@ Second line: elements of vector
 Remove 2nd element → 1 6 2 8 9
 Remove range [2,4) → remove 6 2
 Final vector → 1 8 9
+### HACKERRANK 66: JAVA BITSET
+🧠 Problem: Java BitSet
+
+In Java BitSet, a BitSet is a collection of bits (0s and 1s) that can grow dynamically. A bit with value 1 is called a set bit.
+
+📘 Problem Statement
+
+You are given:
+
+Two BitSets B1 and B2 of size N
+Initially, all bits are 0
+You need to perform M operations
+
+After each operation, print:
+
+number_of_set_bits_in_B1 number_of_set_bits_in_B2
+⚙️ Operations
+
+Each operation will be one of the following:
+
+AND x y
+Perform: Bx = Bx AND By
+OR x y
+Perform: Bx = Bx OR By
+XOR x y
+Perform: Bx = Bx XOR By
+FLIP x y
+Flip bit at index y in Bx
+SET x y
+Set bit at index y in Bx to 1
+🔢 Input Format
+N M
+operation1
+operation2
+...
+operationM
+N → size of BitSets
+M → number of operations
+x is either 1 or 2 (refers to B1 or B2)
+y is the index
+📌 Output Format
+
+After each operation, print:
+
+count(B1) count(B2)
+🧪 Sample Input
+5 4
+AND 1 2
+SET 1 4
+FLIP 2 2
+OR 2 1
+✅ Sample Output
+0 0
+1 0
+1 1
+1 2
+📊 Constraints
+1≤N≤10
+3
+1≤M≤10
+4
