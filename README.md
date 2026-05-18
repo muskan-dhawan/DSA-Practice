@@ -3286,3 +3286,35 @@ OR 2 1
 3
 1≤M≤10
 4
+### HACKERRANK 67: INHERITANCE INTRODUCTION
+Problem: Inheritance Introduction
+
+One of the important concepts of Object-Oriented Programming is inheritance, which allows a class to derive properties and behavior from another class.
+
+You are given a base class Triangle and a derived class Isosceles.
+
+Complete the function description() in the Isosceles class so that it prints the required output.
+
+🔹 Input Format
+
+No input.
+
+🔹 Output Format
+
+Print the following three lines:
+
+I am an isosceles triangle
+In an isosceles triangle two sides are equal
+I am a triangle
+🔹 Sample Input
+(No input)
+🔹 Sample Output
+I am an isosceles triangle
+In an isosceles triangle two sides are equal
+I am a triangle
+
+🔹 Constraints
+No constraints (basic OOP problem)
+🔹 Objective
+Understand inheritance
+Add a new member function in derived class
