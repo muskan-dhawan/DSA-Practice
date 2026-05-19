@@ -3318,3 +3318,64 @@ No constraints (basic OOP problem)
 🔹 Objective
 Understand inheritance
 Add a new member function in derived class
+### HACKERRANK 68: CPP EXCEPTION HANDLING
+C++ Debugging: Exception Handling
+📌 Problem Statement
+
+You are given a function:
+
+int largest_proper_divisor(int n)
+
+This function returns the largest proper divisor of a number n.
+A proper divisor is any divisor less than n.
+
+However:
+
+If n == 0 → it throws an exception
+If n == 1 → it throws an exception
+🎯 Your Task
+
+Modify the function:
+
+void process_input(int n)
+
+So that it behaves as follows:
+
+✅ Required Behavior
+Call largest_proper_divisor(n)
+
+If it returns a value:
+
+result=d
+
+where d is the divisor
+
+If it throws invalid_argument:
+
+print the exception message
+
+Always print (in the end):
+
+returning control flow to caller
+⚠️ Important Rule
+Print "returning control flow to caller" only once
+It must execute whether exception occurs or not
+📥 Input Format
+A single integer n
+📤 Output Format
+As described above
+🔍 Sample Input 1
+0
+✅ Sample Output 1
+largest proper divisor is not defined for n=0
+returning control flow to caller
+🔍 Sample Input 2
+9
+✅ Sample Output 2
+result=3
+returning control flow to caller
+💡 Constraints
+n can be any integer
+🧠 Concept Tested
+Exception Handling (try, catch, throw)
+Clean control flow
