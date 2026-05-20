@@ -3379,3 +3379,52 @@ n can be any integer
 🧠 Concept Tested
 Exception Handling (try, catch, throw)
 Clean control flow
+### HACKERRANK 69: ORGANIZING CONTAINERS OF BALLS
+Organizing Containers of Balls — Question
+
+David has several containers, each containing balls of different types.
+He wants to organize them so that:
+
+Each container contains balls of only one type.
+Balls of the same type are not spread across multiple containers.
+
+David can perform only one operation:
+
+Swap any two balls belonging to different containers.
+
+You are given a matrix container[n][n] where:
+
+container[i][j] represents the number of balls of type j in container i.
+
+Determine whether it is possible to reorganize the balls according to the rules above.
+
+Return:
+
+"Possible" if it can be done
+"Impossible" otherwise
+Example 1
+Input
+container = [
+ [1, 1],
+ [1, 1]
+]
+Output
+Possible
+Example 2
+Input
+container = [
+ [0, 2],
+ [1, 1]
+]
+Output
+Impossible
+Constraints
+1 ≤ n ≤ 100
+0 ≤ container[i][j] ≤ 10^9
+Key Observation
+Total balls in each container remain fixed.
+Total number of each ball type also remains fixed.
+Therefore:
+Sort container capacities.
+Sort ball type totals.
+If both arrays are equal → "Possible" otherwise "Impossible".
