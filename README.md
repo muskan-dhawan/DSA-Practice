@@ -3428,3 +3428,71 @@ Therefore:
 Sort container capacities.
 Sort ball type totals.
 If both arrays are equal → "Possible" otherwise "Impossible".
+### HACKERRANK 70: JAVA PRIORITY QUEUE
+Java Priority Queue
+
+In computer science, a priority queue is an abstract data type similar to a regular queue, but where each element has a priority associated with it. In a priority queue, an element with higher priority is served before an element with lower priority.
+
+You are given a list of events involving students waiting to be served. There are two types of events:
+
+ENTER name CGPA id
+A student enters the queue.
+SERVED
+The student with the highest priority is removed from the queue.
+
+The students are served based on the following priority rules:
+
+Higher CGPA gets higher priority.
+If CGPA is the same, the student with the lexicographically smaller name gets higher priority.
+If both CGPA and name are the same, the student with the smaller ID gets higher priority.
+
+Create two classes:
+
+Student class
+
+Implement:
+
+Student(int id, String name, double cgpa)
+int getID()
+String getName()
+double getCGPA()
+Priorities class
+
+Implement:
+
+List<Student> getStudents(List<String> events)
+
+This method should process all events and return the list of students still in the queue in priority order.
+
+Input Format
+First line contains an integer n, the number of events.
+Next n lines contain either:
+ENTER name CGPA id
+SERVED
+Constraints
+1 ≤ n ≤ 10^5
+Output Format
+
+Print the names of students remaining in the queue in priority order.
+If no students remain, print:
+
+EMPTY
+Sample Input
+12
+ENTER John 3.75 50
+ENTER Mark 3.8 24
+ENTER Shafaet 3.7 35
+SERVED
+SERVED
+ENTER Samiha 3.85 36
+SERVED
+ENTER Ashley 3.9 42
+ENTER Maria 3.6 46
+ENTER Anik 3.95 49
+ENTER Dan 3.95 50
+SERVED
+Sample Output
+Dan
+Ashley
+Shafaet
+Maria
