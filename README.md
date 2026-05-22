@@ -3496,3 +3496,58 @@ Dan
 Ashley
 Shafaet
 Maria
+### HACKERRANK 71: RECTANGLE AREA
+Rectangle Area
+Problem Statement
+
+Create a class hierarchy to calculate the area of a rectangle using inheritance.
+
+You need to create two classes:
+
+1. Rectangle
+Contains two integer data members:
+width
+height
+Has a method:
+display()
+
+which prints the width and height separated by a space.
+
+2. RectangleArea
+Inherits from the Rectangle class.
+Has a method:
+read_input()
+
+to read the values of width and height.
+
+Overrides the display() method to print the area of the rectangle.
+Input Format
+
+A single line containing two space-separated integers:
+
+width height
+Constraints
+1 ≤ width, height ≤ 1000
+Output Format
+
+Print exactly two lines:
+
+Width and height separated by a space.
+Area of the rectangle.
+Sample Input
+10 5
+Sample Output
+10 5
+50
+Explanation
+
+Width = 10
+Height = 5
+
+Area of rectangle:
+A=width×height=10×5=50
+
+So the output is:
+
+10 5
+50
