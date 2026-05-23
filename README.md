@@ -3551,3 +3551,29 @@ So the output is:
 
 10 5
 50
+### HACKERRANK 72 : JAVA INHERITANCE
+Java Inheritance I (HackerRank Style)
+
+Using inheritance, one class can acquire the properties and methods of another class.
+
+You are given a class Animal that has a method walk().
+Create another class Bird that extends the Animal class.
+
+The Bird class should contain:
+
+a method fly() that prints:
+I am flying
+a method sing() that prints:
+I am singing
+
+In the main method:
+
+Create an object of the Bird class.
+Call the methods in the following order:
+walk()
+fly()
+sing()
+Expected Output
+I am walking
+I am flying
+I am singing
