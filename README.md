@@ -3577,3 +3577,20 @@ Expected Output
 I am walking
 I am flying
 I am singing
+### HACKERRANK 73: JAVA INHERITANCE II
+Java Inheritance II – HackerRank Question
+
+Create a class named Arithmetic that contains a method named add(int,int) which returns the sum of two integers.
+
+Create another class named Adder that inherits from the Arithmetic class.
+
+You are not required to take any input from the user. The provided driver code will create an object of Adder and call the add() method.
+
+Requirements
+Create class Arithmetic
+Create method:
+int add(int a, int b)
+Create class Adder that extends Arithmetic
+Sample Output
+My superclass is: Arithmetic
+42 13 20
