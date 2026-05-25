@@ -3594,3 +3594,40 @@ Create class Adder that extends Arithmetic
 Sample Output
 My superclass is: Arithmetic
 42 13 20
+### HACKERRANK 74: JAVA ABSTRACT CLASS
+Java Abstract Class – HackerRank Question
+
+A Java abstract class is a class that cannot be instantiated directly. It is used as a base class for other classes.
+
+You are given an abstract class Book containing:
+
+A String variable title
+An abstract method setTitle(String s)
+A method getTitle() that returns the title
+
+Your task is to create a class named MyBook that extends the Book class and implements the abstract method setTitle().
+
+Important
+Your class must not be public.
+Given Code
+abstract class Book{
+    String title;
+    abstract void setTitle(String s);
+
+    String getTitle(){
+        return title;
+    }
+}
+Input Format
+
+A single line containing the book title.
+
+Output Format
+
+Print:
+
+The title is: <book_title>
+Sample Input
+A tale of two cities
+Sample Output
+The title is: A tale of two cities
