@@ -3631,3 +3631,74 @@ Sample Input
 A tale of two cities
 Sample Output
 The title is: A tale of two cities
+### HACKERRANK 75: ENCRYPTION
+Encryption Problem Statement
+
+An English text needs to be encrypted using the following encryption scheme:
+
+Remove all spaces from the text.
+Let the length of the resulting string be L.
+Choose the number of rows and columns for a grid such that:
+⌊
+L
+	​
+
+⌋≤rows≤cols≤⌈
+L
+	​
+
+⌉
+If multiple grids satisfy the conditions, choose the one with the minimum area (rows × cols).
+Write the characters of the string row-wise into the grid.
+Read the grid column-wise to create the encrypted message.
+Separate each column text with a space.
+Example
+
+Input string:
+
+if man was meant to stay on the ground god would have given us roots
+
+After removing spaces:
+
+ifmanwasmeanttostayonthegroundgodwouldhavegivenusroots
+
+Length = 54
+
+Possible grid:
+
+ifmanwas
+meanttos
+tayonthe
+groundgo
+dwouldha
+vegivenu
+sroots
+
+Reading column-wise gives:
+
+imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn sseoau
+Function Description
+
+Complete the function:
+
+public static String encryption(String s)
+Parameter
+String s : the input text
+Returns
+String : the encrypted string
+Constraints
+1 ≤ |s| ≤ 81
+s contains lowercase English letters and spaces only.
+Sample Input 0
+haveaniceday
+Sample Output 0
+hae and via ecy
+Explanation
+
+Grid:
+have
+anic
+eday
+
+Column-wise reading:
+hae and via ecy
