@@ -3702,3 +3702,31 @@ eday
 
 Column-wise reading:
 hae and via ecy
+### HACKERRANK 76: JAVA INTERFACE
+Question
+
+A Java interface can only contain method signatures and fields. The interface can be used to achieve polymorphism.
+
+You are given an interface AdvancedArithmetic which contains a method signature:
+
+int divisor_sum(int n)
+
+Write a class called MyCalculator which implements the interface.
+
+The divisor_sum function takes an integer n as input and returns the sum of all its divisors.
+
+Example
+
+Divisors of 6 are:
+1, 2, 3, 6
+
+So the output is:
+1 + 2 + 3 + 6 = 12
+
+Constraints
+1 <= n <= 1000
+Sample Input
+6
+Sample Output
+I implemented: AdvancedArithmetic
+12
