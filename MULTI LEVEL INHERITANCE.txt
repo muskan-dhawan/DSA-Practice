@@ -1,0 +1,40 @@
+Multi Level Inheritance – HackerRank Question
+
+Create a class called Equilateral that inherits from Isosceles.
+
+The inheritance hierarchy is:
+
+Triangle → base class
+Isosceles → derived from Triangle
+Equilateral → derived from Isosceles
+
+The program should print:
+
+I am an equilateral triangle
+I am an isosceles triangle
+I am a triangle
+Existing Code
+class Triangle{
+    public:
+        void triangle(){
+            cout<<"I am a triangle"<<endl;
+        }
+};
+
+class Isosceles : public Triangle{
+    public:
+        void isosceles(){
+            cout<<"I am an isosceles triangle"<<endl;
+        }
+};
+Task
+
+Complete the Equilateral class so that this main function works correctly:
+
+int main(){
+    Equilateral eqr;
+    eqr.equilateral();
+    eqr.isosceles();
+    eqr.triangle();
+    return 0;
+}
