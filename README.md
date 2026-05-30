@@ -3771,3 +3771,48 @@ int main(){
     eqr.triangle();
     return 0;
 }
+### HACKERRANK 78: JAVA METHOD OVERRIDING
+HackerRank — Java Method Overriding
+
+When a subclass inherits from a superclass, it also inherits its methods. However, the subclass can override inherited methods to provide its own implementation.
+
+Consider the following class:
+
+class Sports {
+    String getName() {
+        return "Generic Sports";
+    }
+
+    void getNumberOfTeamMembers() {
+        System.out.println("Each team has n players in " + getName());
+    }
+}
+
+Now consider a subclass:
+
+class Soccer extends Sports {
+    @Override
+    String getName() {
+        return "Soccer Class";
+    }
+}
+Task
+
+Complete the Soccer class by writing an overridden getNumberOfTeamMembers() method.
+
+The method should print the same message as the superclass method, except it should replace n with 11, since a soccer team has 11 players.
+
+Expected Output
+Generic Sports
+Each team has n players in Generic Sports
+Soccer Class
+Each team has 11 players in Soccer Class
+Function to Complete
+class Soccer extends Sports {
+    @Override
+    String getName() {
+        return "Soccer Class";
+    }
+
+    // Write your overridden getNumberOfTeamMembers method here
+}
