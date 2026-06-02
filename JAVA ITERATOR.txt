@@ -1,0 +1,65 @@
+HackerRank – Java Iterator
+
+Problem Statement
+
+The Java Iterator class helps iterate through every element in a collection.
+
+Example:
+
+import java.util.*;
+
+public class Example {
+    public static void main(String[] args) {
+        ArrayList mylist = new ArrayList();
+        mylist.add("Hello");
+        mylist.add("Java");
+        mylist.add("4");
+
+        Iterator it = mylist.iterator();
+
+        while (it.hasNext()) {
+            Object element = it.next();
+            System.out.println((String) element);
+        }
+    }
+}
+
+You are given a method func(ArrayList mylist).
+
+The ArrayList contains:
+
+One or more integers,
+Followed by a special string "###",
+Followed by one or more strings.
+
+Example:
+
+element[0] => 42
+element[1] => 10
+element[2] => "###"
+element[3] => "Hello"
+element[4] => "Java"
+
+You must modify the func method (editing at most 2 lines) so that it returns an iterator positioned immediately after "###".
+
+As a result, when the returned iterator is used, only the elements after "###" should be printed.
+
+For the example above, the output should be:
+
+Hello
+Java
+
+Note: The input does not contain the string "###"; it is added automatically in the main method.
+
+Function to Complete
+static Iterator func(ArrayList mylist){
+    Iterator it = mylist.iterator();
+    while(it.hasNext()){
+        Object element = ~~~Complete this line~~~
+        if(~~~Complete this line~~~) // Hints: use instanceof operator
+            break;
+    }
+    return it;
+}
+
+Hint: Use the instanceof operator.
