@@ -3992,3 +3992,55 @@ static Iterator func(ArrayList mylist){
 }
 
 Hint: Use the instanceof operator.
+### HACKERRANK 82: JAVA EXCEPTION HANDLING(TRY-CATCH)
+
+Problem Statement
+
+Exception handling is the process of responding to exceptions (errors) that occur during program execution. Java provides a built-in mechanism for handling exceptions using try and catch blocks.
+
+You are given two inputs x and y. Compute:
+
+x/y
+
+If either input is not a valid 32-bit signed integer or if y = 0, an exception will occur. Print the exception exactly as shown in the sample outputs.
+
+Input Format
+
+Two lines of input:
+
+First line contains x
+Second line contains y
+Output Format
+If both inputs are valid integers and y ≠ 0, print x / y.
+Otherwise print the exception generated.
+Constraints
+Inputs must be 32-bit signed integers.
+-2^31 ≤ value ≤ 2^31 - 1
+Sample Input 1
+10
+3
+Sample Output 1
+3
+Sample Input 2
+10
+Hello
+Sample Output 2
+java.util.InputMismatchException
+Sample Input 3
+10
+0
+Sample Output 3
+java.lang.ArithmeticException: / by zero
+Sample Input 4
+23.323
+0
+Sample Output 4
+java.util.InputMismatchException
+Hidden Test Example
+Input
+2147483648
+2147483648
+Output
+java.util.InputMismatchException
+
+Task: Write a Java program using try-catch blocks to handle these exceptions and produce the required output.
