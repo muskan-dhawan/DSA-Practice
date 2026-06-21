@@ -1,0 +1,114 @@
+HackerRank - Covariant Return Types (Question)
+
+Java allows Covariant Return Types, which means an overridden method in a subclass can return a subtype of the return type declared in the superclass.
+
+You are given partially completed classes representing flowers and regions. Implement the class hierarchy shown below:
+
+Flower is the base class.
+Jasmine and Lily extend Flower.
+
+Region contains a method:
+
+Flower yourNationalFlower()
+WestBengal extends Region and overrides yourNationalFlower() to return a Jasmine.
+AndhraPradesh extends Region and overrides yourNationalFlower() to return a Lily.
+
+Each flower class should implement:
+
+String whatsYourName()
+
+which returns the flower's name.
+
+The hidden code will:
+
+Read a state name (WestBengal or AndhraPradesh).
+Create the corresponding object.
+Call yourNationalFlower().
+Print the result of whatsYourName().
+
+You only need to complete the class definitions.
+
+Sample Input
+AndhraPradesh
+Sample Output
+Lily
+Explanation
+
+An AndhraPradesh object returns a Lily object from yourNationalFlower(). Calling whatsYourName() on that object returns "Lily".
+
+Key Concept Tested
+
+Covariant Return Types in Java:
+
+class Region {
+    Flower yourNationalFlower() { ... }
+}
+
+class AndhraPradesh extends Region {
+    @Override
+    Lily yourNationalFlower() { ... } // Valid
+}
+
+A subclass method may return a subclass of the parent method's return type.
+CODE
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+class Flower {
+    String whatsYourName() {
+        return "I have many names and types";
+    }
+}
+
+class Jasmine extends Flower {
+    @Override
+    String whatsYourName() {
+        return "Jasmine";
+    }
+}
+
+class Lily extends Flower {
+    @Override
+    String whatsYourName() {
+        return "Lily";
+    }
+}
+
+class Region {
+    Flower yourNationalFlower() {
+        return new Flower();
+    }
+}
+
+class WestBengal extends Region {
+    @Override
+    Jasmine yourNationalFlower() {
+        return new Jasmine();
+    }
+}
+
+class AndhraPradesh extends Region {
+    @Override
+    Lily yourNationalFlower() {
+        return new Lily();
+    }
+}
+
+public class Solution {
+  public static void main(String[] args) throws IOException {
+      BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+      String s = reader.readLine().trim();
+      Region region = null;
+      switch (s) {
+        case "WestBengal":
+          region = new WestBengal();
+          break;
+        case "AndhraPradesh":
+          region = new AndhraPradesh();
+          break;
+      }
+      Flower flower = region.yourNationalFlower();
+      System.out.println(flower.whatsYourName());
+    }
+}
