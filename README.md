@@ -4953,3 +4953,14 @@ Returns false if it is composite.
 PerformOperation isPalindrome()
 Returns true if a number is a palindrome.
 Returns false otherwise.
+Input Format
+
+The first line contains an integer T (number of test cases).
+
+Each of the next T lines contains two space-separated integers:
+
+ch – the condition to check:
+1 → Odd/Even
+2 → Prime/Composite
+3 → Palindrome/Not Palindrome
+num – the number to be checked
