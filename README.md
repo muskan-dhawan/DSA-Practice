@@ -4988,3 +4988,24 @@ Constraints
 0 ≤ num ≤ 2^31 - 1
 
 The goal is to implement the required methods using Java 8 Lambda Expressions (or equivalent logic if using Java 7).
+### HACKERRANK 100: OVERLOAD OPERATOR
+HackerRank - Overload Operators (Question)
+
+You are given a class:
+
+class Complex
+{
+public:
+    int a, b;
+};
+
+A complex number is represented as:
+
+a+ib
+
+where:
+
+a = real part
+b = imaginary part
+
+Your task is to overload the + and << operators for the Complex class.
