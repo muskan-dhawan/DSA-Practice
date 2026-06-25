@@ -5099,3 +5099,16 @@ end time = start time + duration
 The student wants to attend the maximum number of workshops such that no two workshops overlap.
 
 You need to implement:
+Structures
+struct Workshop {
+    int start_time;
+    int duration;
+    int end_time;
+};
+
+struct Available_Workshops {
+    int n;
+    Workshop* arr;
+};
+Functions
+1. initialize
