@@ -5221,3 +5221,18 @@ It must be greater than the original word
 It must be the smallest word that satisfies condition 1
 
 If no such string exists, return "no answer".
+Function Description
+
+Complete:
+
+biggerIsGreater(String w)
+
+Parameters:
+
+w → input string
+
+Returns:
+
+String → next lexicographically greater string
+"no answer" if impossible
+
