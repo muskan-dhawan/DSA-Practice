@@ -5426,3 +5426,59 @@ Input
 15
 Output
 quarter past seven
+### HACKERRANK 109: CHOCOLATE FEAST
+Chocolate Feast — Problem Statement
+
+Little Bobby loves chocolate. He frequently goes to his favorite store, Penny Auntie, to buy chocolates. The store has a promotion:
+
+For every m wrappers, Bobby can exchange them for 1 free chocolate.
+
+Given:
+
+n → amount of money Bobby has
+c → cost of one chocolate
+m → number of wrappers needed for one free chocolate
+
+Find the total number of chocolates Bobby can eat if he uses the promotion optimally.
+
+Function Description
+
+Complete the function:
+
+int chocolateFeast(int n, int c, int m)
+Parameters:
+int n: initial money
+int c: cost of one chocolate
+int m: wrappers needed for one free chocolate
+Returns:
+int: total chocolates Bobby can eat
+Input Format
+First line contains integer t → number of test cases.
+Next t lines contain three integers:
+n c m
+Constraints
+1 ≤ t ≤ 100
+1 ≤ n, c, m ≤ 10^5
+Sample Input
+3
+10 2 5
+12 4 4
+6 2 2
+Sample Output
+6
+3
+5
+Explanation
+Test Case 1:
+Money = 10, Cost = 2
+Buy 10/2 = 5 chocolates
+5 wrappers → exchange for 1 free chocolate
+Total = 6
+Test Case 2:
+Buy 12/4 = 3 chocolates
+Only 3 wrappers, need 4
+Total = 3
+Test Case 3:
+Buy 6/2 = 3 chocolates
+Exchange wrappers repeatedly
+Total = 5
