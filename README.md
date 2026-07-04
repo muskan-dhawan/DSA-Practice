@@ -5555,3 +5555,46 @@ So output is:
 3
 2
 1
+### HACKERRANK 111: LISA'S WORKBOOK
+Lisa's Workbook — Problem Statement
+
+Lisa just got a new math workbook. A workbook contains exercise problems grouped into chapters. Lisa believes a problem to be special if its problem number (within a chapter) is the same as the page number where it appears.
+
+Workbook rules:
+
+There are n chapters, numbered from 1 to n.
+Chapter i contains arr[i] problems, numbered from 1 to arr[i].
+Each page can hold at most k problems.
+Only the last page of a chapter may contain fewer than k problems.
+Every new chapter starts on a new page.
+Page numbering starts from 1.
+
+Your task is to count how many special problems are in the workbook.
+
+Function Description
+
+Complete the function:
+
+workbook(int n, int k, List<Integer> arr)
+Parameters
+n: number of chapters
+k: maximum problems per page
+arr: list containing number of problems in each chapter
+Returns
+Integer: number of special problems
+Input Format
+First line contains two integers n and k
+Second line contains n space-separated integers representing arr
+Constraints
+1 ≤ n ≤ 100
+1 ≤ k ≤ 100
+1 ≤ arr[i] ≤ 100
+Sample Input
+5 3
+4 2 6 1 10
+Sample Output
+4
+Explanation
+
+There are 4 special problems in the workbook.
+A problem is special when its problem number matches the page number it appears on.
