@@ -5984,3 +5984,73 @@ The pattern
 does not occur anywhere in the grid, so the output is:
 
 NO
+### HACKERRANK 117: HAPPY LADYBUGS
+Happy Ladybugs is a board game with the following rules:
+
+The board is represented by a string b of length n.
+Each character in the string represents one cell on the board.
+If b[i] is an underscore (_), then the cell is empty.
+If b[i] is an uppercase English letter (A–Z), then the cell contains a ladybug of that color.
+A ladybug is happy if at least one of its adjacent cells (left or right) contains another ladybug of the same color.
+In one move, you may move any ladybug to any empty cell.
+
+Given the board configuration for multiple games, determine whether it is possible to make all ladybugs happy after performing zero or more moves.
+
+Return "YES" if it is possible; otherwise, return "NO".
+
+Function Description
+
+Complete the function:
+
+happyLadybugs(String b)
+Parameter
+String b: the initial arrangement of the ladybugs on the board.
+Returns
+String: "YES" if all ladybugs can be made happy, otherwise "NO".
+Input Format
+The first line contains an integer g, the number of games.
+For each game:
+The first line contains an integer n, the length of the board.
+The second line contains the string b.
+Constraints
+1 ≤ g ≤ 100
+1 ≤ n ≤ 100
+b contains only uppercase English letters (A–Z) and underscores (_).
+Sample Input 0
+4
+7
+RBY_YBR
+6
+X_Y__X
+2
+__
+6
+B_RRBR
+Sample Output 0
+YES
+NO
+YES
+YES
+Explanation
+RBY_YBR → Ladybugs can be rearranged so that every bug has an adjacent bug of the same color. Output: YES.
+X_Y__X → The single Y can never have a matching neighbor. Output: NO.
+__ → There are no ladybugs, so all are trivially happy. Output: YES.
+B_RRBR → Rearranging the bugs makes every ladybug happy. Output: YES.
+Sample Input 1
+5
+5
+AABBC
+7
+AABBC_C
+1
+_
+10
+DD__FQ_QQF
+6
+AABCBC
+Sample Output 1
+NO
+YES
+YES
+YES
+NO
