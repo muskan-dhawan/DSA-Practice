@@ -6147,3 +6147,88 @@ Explanation
 Time 4 is the beginning of the second cycle. The counter resets to 6 (twice the initial value of the previous cycle, which was 3), so the displayed value is:
 
 6
+### HACKERRANK 120: ABSOLUTE PERMUTATION
+HackerRank – Absolute Permutation
+Problem Statement
+
+We define P to be a permutation of the first n natural numbers in the range [1, n]. Let P[i] denote the value at position i in permutation P using 1-based indexing.
+
+A permutation P is called an absolute permutation if:
+
+∣P[i]−i∣=k
+
+for every position i, where k is a given integer.
+
+Given n and k, print the lexicographically smallest absolute permutation. If no such permutation exists, print -1.
+
+Function Description
+
+Complete the function:
+
+absolutePermutation(int n, int k)
+Parameters
+int n – the number of natural numbers.
+int k – the required absolute difference.
+Returns
+int[] – the lexicographically smallest absolute permutation.
+If no valid permutation exists, return [-1].
+Input Format
+The first line contains an integer t, the number of test cases.
+Each of the next t lines contains two space-separated integers:
+n
+k
+Constraints
+1≤t≤20
+1≤n≤10
+5
+0≤k<n
+Sample Input
+3
+2 1
+3 0
+3 2
+Sample Output
+2 1
+1 2 3
+-1
+Explanation
+Test Case 1
+
+For n = 2 and k = 1:
+
+Permutation:
+
+2 1
+
+Check:
+
+|2 − 1| = 1
+|1 − 2| = 1
+
+Hence, it is a valid absolute permutation.
+
+Test Case 2
+
+For n = 3 and k = 0:
+
+Permutation:
+
+1 2 3
+
+Every element stays in its original position, so:
+
+|1 − 1| = 0
+|2 − 2| = 0
+|3 − 3| = 0
+
+Thus, it is a valid absolute permutation.
+
+Test Case 3
+
+For n = 3 and k = 2:
+
+No permutation satisfies |P[i] - i| = 2 for every position.
+
+Therefore, the output is:
+
+-1
