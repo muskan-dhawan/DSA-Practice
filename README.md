@@ -6334,3 +6334,65 @@ OOO...O
 ...OOOO
 
 This is the required output for n = 3.
+### HACKERRANK 122: EMA'S SUPERCOMPUTER
+Ema's Supercomputer
+
+Ema built a quantum computer! Help her test its capabilities by solving the problem below.
+
+You are given a grid of size n × m, where each cell contains either:
+
+'G' (Good cell)
+'B' (Bad cell)
+
+A valid plus consists of a center cell and four arms (up, down, left, right) of equal length extending from the center. Every cell in the plus must be 'G'.
+
+The arm length can be 0, in which case the plus consists of only the center cell.
+
+The area of a plus is:
+
+Area = 4 × arm_length + 1
+
+You need to choose two valid pluses such that:
+
+They do not overlap (they cannot share any cell).
+The product of their areas is maximized.
+
+Return the maximum possible product of the areas of the two pluses.
+
+Function Description
+
+Complete the function:
+
+int twoPluses(vector<string> grid)
+Parameter
+grid: An array of strings representing the grid.
+Returns
+An integer representing the maximum product of the areas of two non-overlapping valid pluses.
+Input Format
+The first line contains two space-separated integers n and m, the number of rows and columns.
+Each of the next n lines contains a string of length m consisting only of 'G' and 'B'.
+Constraints
+2 ≤ n, m ≤ 15
+Sample Input 0
+5 6
+GGGGGG
+GBBBGB
+GGGGGG
+GGBBGB
+GGGGGG
+Sample Output 0
+5
+Sample Input 1
+6 6
+BGBBGB
+GGGGGG
+BGBBGB
+GGGGGG
+BGBBGB
+BGBBGB
+Sample Output 1
+25
+Explanation
+A plus may have arm length 0, giving an area of 1.
+Larger pluses have larger areas but require more consecutive 'G' cells.
+The objective is to find the two largest non-overlapping valid pluses whose area product is maximum.
