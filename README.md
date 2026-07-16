@@ -6396,3 +6396,82 @@ Explanation
 A plus may have arm length 0, giving an area of 1.
 Larger pluses have larger areas but require more consecutive 'G' cells.
 The objective is to find the two largest non-overlapping valid pluses whose area product is maximum.
+### HACKERRANK 123: LARRY'S ARRAY 
+Larry's Array
+
+Larry has been given a permutation of the natural numbers from 1 to n stored in an array.
+
+He wants to determine whether the array can be sorted in ascending order using the following operation any number of times:
+
+Choose any 3 consecutive elements in the array.
+Rotate them to the left:
+(A[i], A[i+1], A[i+2]) → (A[i+1], A[i+2], A[i])
+
+For example, if the chosen elements are [6, 5, 2], after one rotation they become [5, 2, 6].
+
+Your task is to determine whether the given array can be sorted using this operation.
+
+If it can be sorted, print "YES"; otherwise, print "NO".
+
+Function Description
+
+Complete the function:
+
+string larrysArray(vector<int> A);
+
+Parameters:
+
+A: A vector representing a permutation of integers from 1 to n.
+
+Returns:
+
+"YES" if the array can be sorted.
+"NO" otherwise.
+Input Format
+The first line contains an integer t, the number of test cases.
+For each test case:
+The first line contains an integer n, the size of the array.
+The second line contains n space-separated integers representing the permutation.
+Constraints
+1 ≤ t ≤ 100
+3 ≤ n ≤ 1000
+A is a permutation of the integers from 1 to n.
+Output Format
+
+For each test case, print "YES" if the array can be sorted using the allowed operation; otherwise, print "NO".
+
+Sample Input
+3
+3
+3 1 2
+4
+1 3 4 2
+5
+1 2 3 5 4
+Sample Output
+YES
+YES
+NO
+Explanation
+
+Test Case 1:
+
+3 1 2
+→ rotate all three elements
+1 2 3
+
+The array becomes sorted, so the answer is YES.
+
+Test Case 2:
+
+Using a sequence of allowed rotations, the array can be transformed into:
+
+1 2 3 4
+
+Hence, the answer is YES.
+
+Test Case 3:
+
+No sequence of valid rotations can sort the array.
+
+Hence, the answer is NO.
