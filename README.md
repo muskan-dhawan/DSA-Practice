@@ -6475,3 +6475,59 @@ Test Case 3:
 No sequence of valid rotations can sort the array.
 
 Hence, the answer is NO.
+### HACKERRANK 124: ALMOST SORTED
+Almost Sorted (HackerRank)
+
+Given an array of distinct integers, determine whether it can be sorted in ascending order by performing exactly one of the following operations at most once:
+
+Swap two elements.
+Reverse one contiguous subarray.
+Output Rules
+
+If the array is already sorted, print:
+
+yes
+
+If the array can be sorted using exactly one operation, print:
+
+yes
+
+followed by:
+
+swap l r if swapping the elements at 1-based indices l and r sorts the array.
+Otherwise, reverse l r if reversing the subarray from index l to r sorts the array.
+If both swap and reverse can sort the array, choose swap.
+
+If neither operation can sort the array, print:
+
+no
+Input Format
+The first line contains an integer n, the number of elements in the array.
+The second line contains n space-separated distinct integers representing the array.
+Constraints
+2 ≤ n ≤ 100000
+All array elements are distinct.
+Sample Input 1
+2
+4 2
+Sample Output 1
+yes
+swap 1 2
+Sample Input 2
+3
+3 1 2
+Sample Output 2
+no
+Sample Input 3
+6
+1 5 4 3 2 6
+Sample Output 3
+yes
+reverse 2 5
+Explanation
+Sample 1: Swapping the two elements sorts the array.
+Sample 2: The array cannot be sorted using a single swap or a single reverse.
+
+Sample 3: Reversing the subarray [5, 4, 3, 2] (indices 2 to 5) results in the sorted array:
+
+1 2 3 4 5 6
