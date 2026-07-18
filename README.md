@@ -6531,3 +6531,76 @@ Sample 2: The array cannot be sorted using a single swap or a single reverse.
 Sample 3: Reversing the subarray [5, 4, 3, 2] (indices 2 to 5) results in the sorted array:
 
 1 2 3 4 5 6
+### HACKERRANK 125: MATRIX LAYER ROTATION
+Matrix Layer Rotation (HackerRank)
+
+You are given a 2D matrix of dimensions m × n and a positive integer r. Rotate the matrix r times in the anti-clockwise direction and print the resulting matrix.
+
+The rotation is performed layer by layer (also called rings). During one rotation, every element in a layer shifts by one position anti-clockwise.
+
+A matrix may contain multiple layers, and each layer should be rotated independently.
+
+It is guaranteed that the smaller of m and n is even.
+
+Function Description
+
+Complete the function:
+
+void matrixRotation(vector<vector<int>> matrix, int r)
+Parameters
+matrix: A 2D integer array of size m × n.
+r: The number of anti-clockwise rotations.
+Output
+
+Print the rotated matrix. Each row should be printed on a separate line with elements separated by spaces.
+
+Input Format
+The first line contains three integers:
+m – number of rows
+n – number of columns
+r – number of rotations
+The next m lines each contain n space-separated integers representing the matrix.
+Constraints
+2 ≤ m, n ≤ 300
+2 ≤ min(m, n)
+min(m, n) is even
+1 ≤ r ≤ 10^9
+1 ≤ matrix[i][j] ≤ 10^8
+Sample Input 1
+4 4 2
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+Sample Output 1
+3 4 8 12
+2 11 10 16
+1 7 6 15
+5 9 13 14
+Explanation
+
+The matrix is rotated two times in the anti-clockwise direction, rotating each layer independently.
+
+Sample Input 2
+5 4 7
+1 2 3 4
+7 8 9 10
+13 14 15 16
+19 20 21 22
+25 26 27 28
+Sample Output 2
+28 27 26 25
+22 9 15 19
+16 8 21 13
+10 14 20 7
+4 3 2 1
+Sample Input 3
+2 2 3
+1 1
+1 1
+Sample Output 3
+1 1
+1 1
+Explanation
+
+All elements are identical, so rotating the matrix any number of times results in the same matrix.
