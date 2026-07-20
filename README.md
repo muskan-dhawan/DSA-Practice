@@ -6604,3 +6604,78 @@ Sample Output 3
 Explanation
 
 All elements are identical, so rotating the matrix any number of times results in the same matrix.
+### HACKERRANK 126: BIG SORTING
+Big Sorting
+
+Consider an array of numeric strings where each string is a positive number with anywhere from 1 to 10⁶ digits. Sort the array's elements in non-decreasing (ascending) order of their integer values and return the sorted array.
+
+Example
+
+Input
+
+["1", "200", "150", "3"]
+
+Output
+
+["1", "3", "150", "200"]
+Function Description
+
+Complete the function bigSorting.
+
+Function Signature
+vector<string> bigSorting(vector<string> unsorted);
+Parameters
+unsorted[n]: an unsorted array of positive integers represented as strings.
+Returns
+vector<string>: the array sorted in ascending numerical order.
+Input Format
+The first line contains an integer n, the number of strings.
+Each of the next n lines contains a positive integer represented as a string.
+Constraints
+Each string represents a positive integer.
+There are no leading zeros.
+The total number of digits across all strings is between 1 and 10⁶ (inclusive).
+Sample Input 0
+6
+31415926535897932384626433832795
+1
+3
+10
+3
+5
+Sample Output 0
+1
+3
+3
+5
+10
+31415926535897932384626433832795
+Explanation
+
+Sorting the numeric strings by their integer values gives:
+
+1
+3
+3
+5
+10
+31415926535897932384626433832795
+Sample Input 1
+8
+1
+2
+100
+12303479849857341718340192371
+3084193741082937
+3084193741082938
+111
+200
+Sample Output 1
+1
+2
+100
+111
+200
+3084193741082937
+3084193741082938
+12303479849857341718340192371
