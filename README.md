@@ -6679,3 +6679,77 @@ Sample Output 1
 3084193741082937
 3084193741082938
 12303479849857341718340192371
+### HACKERRANK 127: SUPER REDUCED STRING
+Super Reduced String
+
+Reduce a string of lowercase English letters by repeatedly performing the following operation:
+
+Select any pair of adjacent identical characters and remove both of them.
+
+Continue this process until no more adjacent identical pairs remain.
+
+Return the resulting string. If the final string is empty, return "Empty String".
+
+Function Description
+
+Complete the function superReducedString.
+
+Parameter:
+
+string s: the input string
+
+Returns:
+
+string: the reduced string, or "Empty String" if all characters are removed
+Input Format
+
+A single string s.
+
+Constraints
+1 ≤ |s| ≤ 100
+Examples
+Example 1
+
+Input:
+
+aaabccddd
+
+Output:
+
+abd
+
+Explanation:
+
+aaabccddd
+→ abccddd
+→ abddd
+→ abd
+Example 2
+
+Input:
+
+aa
+
+Output:
+
+Empty String
+
+Explanation:
+
+aa
+→ Empty String
+Example 3
+
+Input:
+
+baab
+
+Output:
+
+Empty String
+
+Explanation:
+
+baab
+→ bb
+→ Empty String
