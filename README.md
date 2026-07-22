@@ -6753,3 +6753,41 @@ Explanation:
 baab
 → bb
 → Empty String
+### HACKERRANK 128: INTRO TO TUTORIAL CHALLENGES
+HackerRank – Intro to Tutorial Challenges (Question)
+
+Given a sorted array of integers arr[] and an integer V, find the zero-based index of V in the array.
+
+It is guaranteed that V appears exactly once in the array.
+
+Function Description
+
+Complete the function:
+
+int introTutorial(int V, vector<int> arr)
+
+Parameters:
+
+V: The integer value to search for.
+arr: A sorted array of integers.
+
+Returns:
+
+An integer representing the zero-based index of V in arr.
+Input Format
+The first line contains an integer V, the value to search for.
+The second line contains an integer n, the size of the array.
+The third line contains n space-separated integers representing the sorted array arr.
+Constraints
+1 ≤ n ≤ 1000
+The array is sorted in ascending order.
+V occurs exactly once in arr.
+Sample Input
+4
+6
+1 4 5 7 9 12
+Sample Output
+1
+Explanation
+
+The value 4 is located at index 1 in the array [1, 4, 5, 7, 9, 12]. Therefore, the answer is 1.
