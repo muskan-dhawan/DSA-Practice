@@ -6791,3 +6791,64 @@ Sample Output
 Explanation
 
 The value 4 is located at index 1 in the array [1, 4, 5, 7, 9, 12]. Therefore, the answer is 1.
+### HACKERRANK 129: CAMELCASE
+CamelCase
+
+Alice wrote a sequence of words using CamelCase formatting. In CamelCase:
+
+The string is formed by concatenating one or more English words.
+The first word consists entirely of lowercase letters.
+Every subsequent word starts with an uppercase letter, followed by lowercase letters.
+
+Given a CamelCase string s, determine the number of words it contains.
+
+Function Description
+
+Complete the function:
+
+int camelcase(string s)
+Parameter
+string s: the CamelCase string.
+Returns
+int: the number of words in s.
+Input Format
+
+A single line containing the string s.
+
+Constraints
+1 ≤ |s| ≤ 10^5
+s contains only English alphabet letters.
+s is guaranteed to be a valid CamelCase string.
+Example
+
+Input
+
+oneTwoThree
+
+Output
+
+3
+
+Explanation
+
+The string contains the words:
+
+one
+Two
+Three
+
+Hence, the answer is 3.
+
+Sample Input
+saveChangesInTheEditor
+Sample Output
+5
+Explanation
+
+The string contains five words:
+
+save
+Changes
+In
+The
+Editor
