@@ -6994,3 +6994,59 @@ a-z
 A-Z
 0-9
 !@#$%^&*()-+
+### HACKERRANK 132: TWO CHARACTERS
+Two Characters – Problem Statement
+
+Given a string s, remove characters until the string is made up of only two distinct characters that strictly alternate.
+
+When you choose a character to remove, all occurrences of that character must be removed.
+
+Your task is to determine the maximum possible length of such a string. If no valid string can be formed, return 0.
+
+Example
+
+Input:
+
+s = "beabeefeab"
+
+Possible character pairs:
+
+(a, b) → "babab" ✓ (alternating, length = 5)
+(a, e) → "eaeeea" ✗
+(a, f) → "afa" ✗
+(b, e) → "bebeeeb" ✗
+(b, f) → "bfb" ✗
+(e, f) → "eefee" ✗
+
+The longest valid alternating string is "babab".
+
+Output:
+
+5
+Function Description
+
+Complete the function:
+
+int alternate(string s)
+Parameters
+string s: the input string
+Returns
+int: the length of the longest valid alternating string, or 0 if none exists.
+Input Format
+The first line contains an integer n, the length of the string.
+The second line contains the string s.
+Constraints
+1 ≤ n ≤ 1000
+s contains only lowercase English letters.
+Sample Input
+10
+beabeefeab
+Sample Output
+5
+Explanation
+
+Removing all e and f characters leaves:
+
+babab
+
+This string contains only a and b, and they alternate perfectly, so the answer is 5.
