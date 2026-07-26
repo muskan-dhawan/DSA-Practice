@@ -1,0 +1,146 @@
+Two Characters – Problem Statement
+
+Given a string s, remove characters until the string is made up of only two distinct characters that strictly alternate.
+
+When you choose a character to remove, all occurrences of that character must be removed.
+
+Your task is to determine the maximum possible length of such a string. If no valid string can be formed, return 0.
+
+Example
+
+Input:
+
+s = "beabeefeab"
+
+Possible character pairs:
+
+(a, b) → "babab" ✓ (alternating, length = 5)
+(a, e) → "eaeeea" ✗
+(a, f) → "afa" ✗
+(b, e) → "bebeeeb" ✗
+(b, f) → "bfb" ✗
+(e, f) → "eefee" ✗
+
+The longest valid alternating string is "babab".
+
+Output:
+
+5
+Function Description
+
+Complete the function:
+
+int alternate(string s)
+Parameters
+string s: the input string
+Returns
+int: the length of the longest valid alternating string, or 0 if none exists.
+Input Format
+The first line contains an integer n, the length of the string.
+The second line contains the string s.
+Constraints
+1 ≤ n ≤ 1000
+s contains only lowercase English letters.
+Sample Input
+10
+beabeefeab
+Sample Output
+5
+Explanation
+
+Removing all e and f characters leaves:
+
+babab
+
+This string contains only a and b, and they alternate perfectly, so the answer is 5.
+CODE
+#include <bits/stdc++.h>
+using namespace std;
+
+string ltrim(const string &);
+string rtrim(const string &);
+
+/*
+ * Complete the 'alternate' function below.
+ *
+ * The function is expected to return an INTEGER.
+ * The function accepts STRING s as parameter.
+ */
+
+int alternate(string s) {
+    set<char> st(s.begin(), s.end());
+    vector<char> chars(st.begin(), st.end());
+
+    int ans = 0;
+
+    for (int i = 0; i < chars.size(); i++) {
+        for (int j = i + 1; j < chars.size(); j++) {
+
+            string t = "";
+
+            for (char c : s) {
+                if (c == chars[i] || c == chars[j])
+                    t += c;
+            }
+
+            bool ok = true;
+            for (int k = 1; k < t.size(); k++) {
+                if (t[k] == t[k - 1]) {
+                    ok = false;
+                    break;
+                }
+            }
+
+            if (ok && t.size() >= 2)
+                ans = max(ans, (int)t.size());
+        }
+    }
+
+    return ans;
+}
+
+int main() {
+    ofstream fout(getenv("OUTPUT_PATH"));
+
+    string l_temp;
+    getline(cin, l_temp);
+
+    int l = stoi(ltrim(rtrim(l_temp)));
+
+    string s;
+    getline(cin, s);
+
+    int result = alternate(s);
+
+    fout << result << "\n";
+
+    fout.close();
+
+    return 0;
+}
+
+string ltrim(const string &str) {
+    string s(str);
+
+    s.erase(
+        s.begin(),
+        find_if(s.begin(), s.end(), [](unsigned char ch) {
+            return !isspace(ch);
+        })
+    );
+
+    return s;
+}
+
+string rtrim(const string &str) {
+    string s(str);
+
+    s.erase(
+        find_if(s.rbegin(), s.rend(), [](unsigned char ch) {
+            return !isspace(ch);
+        }).base(),
+        s.end()
+    );
+
+    return s;
+}
