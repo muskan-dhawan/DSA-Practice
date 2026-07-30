@@ -7189,3 +7189,87 @@ z → b
 Thus, the encrypted string is:
 
 okffng-Qwvb
+### HACKERRANK 136: MARS EXPLORATION SOS
+Question: Mars Exploration
+
+A space explorer's ship crashed on Mars and repeatedly sends the message "SOS" to Earth for help.
+
+During transmission, some characters in the received message may be altered due to cosmic radiation.
+
+Given the received signal as a string s, determine how many characters have been changed from the original message.
+
+The original message consists of the pattern "SOS" repeated continuously.
+
+Function Description
+
+Complete the function:
+
+int marsExploration(string s);
+
+Parameter:
+
+string s: the received message.
+
+Returns:
+
+int: the number of altered characters.
+Input Format
+A single line containing the string s.
+Constraints
+1 ≤ |s| ≤ 99
+|s| is a multiple of 3.
+s contains only uppercase English letters (A-Z).
+Example 1
+
+Input
+
+SOSSPSSQSSOR
+
+Output
+
+3
+
+Explanation
+Expected message:
+
+SOSSOSSOSSOS
+
+Received message:
+
+SOSSPSSQSSOR
+
+There are 3 mismatched characters.
+
+Example 2
+
+Input
+
+SOSSOT
+
+Output
+
+1
+
+Explanation
+Expected:
+
+SOSSOS
+
+Received:
+
+SOSSOT
+
+Only the last character is different.
+
+Example 3
+
+Input
+
+SOSSOSSOS
+
+Output
+
+0
+
+Explanation
+The received message matches the expected signal exactly, so no characters were altered.
