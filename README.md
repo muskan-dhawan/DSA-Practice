@@ -7273,3 +7273,45 @@ Output
 
 Explanation
 The received message matches the expected signal exactly, so no characters were altered.
+### HACKERRANK 137: RUNNING TIME OF ALGORITHM
+Insertion Sort - Running Time (Question)
+
+Insertion Sort is a simple sorting algorithm that works well with small or nearly sorted datasets. However, for large unsorted datasets, its running time becomes inefficient.
+
+A shift occurs whenever an element is moved one position to the right during the insertion process.
+
+Given an array of integers, determine the total number of shifts performed by the Insertion Sort algorithm while sorting the array in ascending order.
+
+Function Description
+
+Complete the function:
+
+int runningTime(vector<int> arr)
+Parameter
+arr[n]: An array of integers.
+Returns
+int: The total number of shifts required to sort the array.
+Input Format
+The first line contains an integer n, the number of elements in the array.
+The second line contains n space-separated integers representing the array.
+Output Format
+
+Print a single integer representing the total number of shifts made by Insertion Sort.
+
+Constraints
+1 ≤ n ≤ 1000
+1 ≤ arr[i] ≤ 1000000
+Sample Input
+5
+2 1 3 1 2
+Sample Output
+4
+Explanation
+Iteration	Array	Shifts
+Initial	2 1 3 1 2	0
+1	1 2 3 1 2	1
+2	1 2 3 1 2	0
+3	1 1 2 3 2	2
+4	1 1 2 2 3	1
+
+Total Shifts = 4
