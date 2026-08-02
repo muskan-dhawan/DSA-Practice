@@ -1,0 +1,168 @@
+Quicksort 1 - Partition
+
+The previous challenges covered Insertion Sort, which is a simple sorting algorithm with a running time of O(n²). In this challenge, you will implement the partitioning step of the Quicksort algorithm.
+
+Problem Statement
+
+Given an array arr, use the first element of the array as the pivot.
+
+Partition the array into three parts:
+
+left: All elements less than the pivot.
+equal: All elements equal to the pivot.
+right: All elements greater than the pivot.
+
+Return a new array consisting of:
+
+left + equal + right
+
+The relative order of elements within left and right does not matter.
+
+Function Description
+
+Complete the function:
+
+vector<int> quickSort(vector<int> arr);
+Parameter
+arr: An array of distinct integers where arr[0] is the pivot.
+Returns
+A partitioned array with all elements less than the pivot first, followed by the pivot, followed by all elements greater than the pivot.
+Input Format
+The first line contains an integer n, the size of the array.
+The second line contains n space-separated integers representing the array.
+Constraints
+1 ≤ n ≤ 1000
+1 ≤ arr[i] ≤ 10000
+All elements are distinct.
+Sample Input
+5
+4 5 3 7 2
+Sample Output
+3 2 4 5 7
+Explanation
+Pivot = 4
+Elements less than 4: 3, 2
+Elements equal to 4: 4
+Elements greater than 4: 5, 7
+
+Result:
+
+3 2 4 5 7
+
+(Any order of the elements on either side of the pivot is acceptable, as long as all smaller elements come before the pivot and all larger elements come after it.)
+CODE
+#include <bits/stdc++.h>
+
+using namespace std;
+
+string ltrim(const string &);
+string rtrim(const string &);
+vector<string> split(const string &);
+
+/*
+ * Complete the 'quickSort' function below.
+ *
+ * The function is expected to return an INTEGER_ARRAY.
+ * The function accepts INTEGER_ARRAY arr as parameter.
+ */
+
+vector<int> quickSort(vector<int> arr) {
+    int pivot = arr[0];
+
+    vector<int> left, equal, right;
+
+    for (int x : arr) {
+        if (x < pivot)
+            left.push_back(x);
+        else if (x == pivot)
+            equal.push_back(x);
+        else
+            right.push_back(x);
+    }
+
+    vector<int> result;
+
+    for (int x : left) result.push_back(x);
+    for (int x : equal) result.push_back(x);
+    for (int x : right) result.push_back(x);
+
+    return result;
+}
+
+int main()
+{
+    ofstream fout(getenv("OUTPUT_PATH"));
+
+    string n_temp;
+    getline(cin, n_temp);
+
+    int n = stoi(ltrim(rtrim(n_temp)));
+
+    string arr_temp_temp;
+    getline(cin, arr_temp_temp);
+
+    vector<string> arr_temp = split(rtrim(arr_temp_temp));
+
+    vector<int> arr(n);
+
+    for (int i = 0; i < n; i++) {
+        int arr_item = stoi(arr_temp[i]);
+
+        arr[i] = arr_item;
+    }
+
+    vector<int> result = quickSort(arr);
+
+    for (size_t i = 0; i < result.size(); i++) {
+        fout << result[i];
+
+        if (i != result.size() - 1) {
+            fout << " ";
+        }
+    }
+
+    fout << "\n";
+
+    fout.close();
+
+    return 0;
+}
+
+string ltrim(const string &str) {
+    string s(str);
+
+    s.erase(
+        s.begin(),
+        find_if(s.begin(), s.end(), not1(ptr_fun<int, int>(isspace)))
+    );
+
+    return s;
+}
+
+string rtrim(const string &str) {
+    string s(str);
+
+    s.erase(
+        find_if(s.rbegin(), s.rend(), not1(ptr_fun<int, int>(isspace))).base(),
+        s.end()
+    );
+
+    return s;
+}
+
+vector<string> split(const string &str) {
+    vector<string> tokens;
+
+    string::size_type start = 0;
+    string::size_type end = 0;
+
+    while ((end = str.find(" ", start)) != string::npos) {
+        tokens.push_back(str.substr(start, end - start));
+
+        start = end + 1;
+    }
+
+    tokens.push_back(str.substr(start));
+
+    return tokens;
+}
