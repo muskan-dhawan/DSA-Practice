@@ -7315,3 +7315,56 @@ Initial	2 1 3 1 2	0
 4	1 1 2 2 3	1
 
 Total Shifts = 4
+### HACKERRANK 138: QUICKSORT 1 - PARTITION
+Quicksort 1 - Partition
+
+The previous challenges covered Insertion Sort, which is a simple sorting algorithm with a running time of O(n²). In this challenge, you will implement the partitioning step of the Quicksort algorithm.
+
+Problem Statement
+
+Given an array arr, use the first element of the array as the pivot.
+
+Partition the array into three parts:
+
+left: All elements less than the pivot.
+equal: All elements equal to the pivot.
+right: All elements greater than the pivot.
+
+Return a new array consisting of:
+
+left + equal + right
+
+The relative order of elements within left and right does not matter.
+
+Function Description
+
+Complete the function:
+
+vector<int> quickSort(vector<int> arr);
+Parameter
+arr: An array of distinct integers where arr[0] is the pivot.
+Returns
+A partitioned array with all elements less than the pivot first, followed by the pivot, followed by all elements greater than the pivot.
+Input Format
+The first line contains an integer n, the size of the array.
+The second line contains n space-separated integers representing the array.
+Constraints
+1 ≤ n ≤ 1000
+1 ≤ arr[i] ≤ 10000
+All elements are distinct.
+Sample Input
+5
+4 5 3 7 2
+Sample Output
+3 2 4 5 7
+Explanation
+Pivot = 4
+Elements less than 4: 3, 2
+Elements equal to 4: 4
+Elements greater than 4: 5, 7
+
+Result:
+
+3 2 4 5 7
+
+(Any order of the elements on either side of the pivot is acceptable, as long as all smaller elements come before the pivot and all larger elements come after it.)
