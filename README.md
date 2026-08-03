@@ -7368,3 +7368,49 @@ Result:
 3 2 4 5 7
 
 (Any order of the elements on either side of the pivot is acceptable, as long as all smaller elements come before the pivot and all larger elements come after it.)
+### HACKERRANK 139: HACKERRANK IN A STRING!
+Question: HackerRank in a String
+
+We say that a string contains the word hackerrank if a subsequence of its characters spells the word hackerrank. A subsequence maintains the relative order of characters but does not require them to be contiguous.
+
+Given multiple query strings, determine whether each string contains hackerrank as a subsequence.
+
+For each query, print:
+
+YES if the string contains hackerrank as a subsequence.
+NO otherwise.
+Function Description
+
+Complete the function:
+
+string hackerrankInString(string s)
+Parameter
+string s: the input string.
+Returns
+string: "YES" if s contains hackerrank as a subsequence, otherwise "NO".
+Input Format
+The first line contains an integer q, the number of queries.
+Each of the next q lines contains a string s.
+Constraints
+1 ≤ q ≤ 10^2
+1 ≤ |s| ≤ 10^4
+Sample Input 0
+2
+hereiamstackerrank
+hackerworld
+Sample Output 0
+YES
+NO
+Explanation
+hereiamstackerrank contains the characters of hackerrank in the correct order.
+hackerworld does not contain the complete subsequence.
+Sample Input 1
+2
+hhaacckkekraraannk
+rhbaasdndfsdskgbfefdbrsdfhuyatrjtcrtyytktjjt
+Sample Output 1
+YES
+NO
+Expected Complexity
+Time: O(|s|) per query
+Space: O(1)
