@@ -7414,3 +7414,39 @@ NO
 Expected Complexity
 Time: O(|s|) per query
 Space: O(1)
+### HACKERRANK 140: PANGRAMS
+Pangrams
+
+A pangram is a string that contains every letter of the English alphabet at least once. Given a sentence, determine whether it is a pangram. Ignore letter case. Return either pangram or not pangram as appropriate.
+
+Function Description
+
+Complete the function pangrams.
+
+Function Signature
+
+string pangrams(string s);
+Parameter
+string s: the sentence to test.
+Returns
+string: Return "pangram" if the sentence contains every letter of the English alphabet at least once; otherwise, return "not pangram".
+Input Format
+A single line containing the string s.
+Constraints
+1 ≤ |s| ≤ 10^3
+The string contains English letters, spaces, and other printable ASCII characters.
+Sample Input 0
+We promptly judged antique ivory buckles for the next prize
+Sample Output 0
+pangram
+Explanation
+
+The sentence contains every letter from a to z at least once.
+
+Sample Input 1
+We promptly judged antique ivory buckles for the prize
+Sample Output 1
+not pangram
+Explanation
+
+The sentence does not contain the letter 'x', so it is not a pangram.
