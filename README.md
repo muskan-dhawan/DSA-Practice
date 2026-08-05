@@ -7450,3 +7450,88 @@ not pangram
 Explanation
 
 The sentence does not contain the letter 'x', so it is not a pangram.
+### HACKERRANK 141: WEIGHTED UNIFORM STRINGS
+Weighted Uniform Strings
+
+A weighted string is a string of lowercase English letters where each letter has a weight corresponding to its position in the alphabet:
+
+a = 1
+b = 2
+c = 3
+...
+z = 26
+
+The weight of a string is the sum of the weights of its characters.
+
+A uniform string consists of a single character repeated one or more times. Examples of uniform strings are "a", "ccc", and "zzzz". Strings like "ab" or "cac" are not uniform.
+
+Given a string s, consider all possible uniform contiguous substrings of s. Let U be the set of their weights.
+
+You are given several queries. For each query, determine whether its value exists in U.
+
+For each query, output:
+
+"Yes" if the queried weight exists in U
+"No" otherwise
+Example
+
+Input
+
+s = "abccddde"
+queries = [1, 3, 12, 5, 9, 10]
+
+Uniform Substrings and Their Weights
+
+Substring	Weight
+a	1
+b	2
+c	3
+cc	6
+d	4
+dd	8
+ddd	12
+e	5
+
+Output
+
+Yes
+Yes
+Yes
+Yes
+No
+No
+Function Description
+
+Complete the function:
+
+vector<string> weightedUniformStrings(string s, vector<int> queries);
+Parameters
+string s — the input string
+vector<int> queries — the query values
+Returns
+vector<string> — for each query, return "Yes" if the weight exists, otherwise "No".
+Input Format
+The first line contains the string s.
+The second line contains an integer q, the number of queries.
+Each of the next q lines contains an integer representing a query.
+Constraints
+1 ≤ |s| ≤ 10^5
+1 ≤ q ≤ 10^5
+s contains only lowercase English letters.
+1 ≤ queries[i] ≤ 10^7
+Sample Input
+abccddde
+6
+1
+3
+12
+5
+9
+10
+Sample Output
+Yes
+Yes
+Yes
+Yes
+No
+No
