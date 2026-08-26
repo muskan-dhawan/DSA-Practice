@@ -8590,7 +8590,7 @@ You are given the full name of a person. Your task is to capitalize the name app
 
 For example:
 
-alison heck
+alison hecK
 
 should become:
 
