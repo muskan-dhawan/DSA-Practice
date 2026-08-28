@@ -8743,3 +8743,37 @@ Sample Output
 1.1071487177940904
 
 Your task: Write the Python program to solve this problem.
+### HACKERRANK 163: INTRODUCTION TO SETS
+📝 Question
+
+Given an array of integers representing the heights of plants, calculate the average height of all distinct plants.
+
+You must:
+
+Remove duplicate heights.
+Find the sum of the remaining heights.
+Divide by the number of distinct heights.
+Round the answer to 3 decimal places.
+Example
+
+Input:
+
+10
+161 182 161 154 176 170 167 171 170 174
+
+Output:
+
+169.375
+
+Explanation:
+
+The distinct heights are:
+
+154 161 167 170 171 174 176 182
+
+Their average is:
+
+(154 + 161 + 167 + 170 + 171 + 174 + 176 + 182) / 8
+= 169.375
+
+Your task: Complete the average(array) function.
