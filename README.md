@@ -8964,3 +8964,39 @@ Explanation:
 Final happiness = 1.
 
 Your task: Write the Python 3 solution.
+### HACKERRANK 171: COLLECTIONS.ORDEREDDICT()
+Question: Collections.OrderedDict()
+
+You are given a list of items purchased at a supermarket along with their prices. Your task is to calculate the total net price for each unique item and print the items in the order of their first occurrence.
+
+Input Format
+
+The first line contains an integer N, the number of purchases.
+The next N lines contain an item name followed by its price, separated by spaces.
+Item names may contain multiple words.
+
+Output Format
+
+Print each unique item name followed by its total price, one item per line, in the order of first occurrence.
+
+Sample Input
+
+9
+BANANA FRIES 12
+POTATO CHIPS 30
+APPLE JUICE 10
+CANDY 5
+APPLE JUICE 10
+CANDY 5
+CANDY 5
+CANDY 5
+POTATO CHIPS 30
+
+Sample Output
+
+BANANA FRIES 12
+POTATO CHIPS 60
+APPLE JUICE 20
+CANDY 20
+
+Task: Write the solution in Python 3 using collections.OrderedDict.
