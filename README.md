@@ -9000,3 +9000,21 @@ APPLE JUICE 20
 CANDY 20
 
 Task: Write the solution in Python 3 using collections.OrderedDict.
+### HACKERRANK 172: SYMMETRIC DIFFERENCE
+Question
+
+Given two sets of integers A and B, print their symmetric difference in ascending order, with each integer printed on a new line.
+
+Symmetric difference: Elements that are present in either set, but not in both.
+
+Input
+4
+2 4 5 9
+4
+2 4 11 12
+Output
+5
+9
+11
+12
+
