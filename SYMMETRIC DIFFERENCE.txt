@@ -1,0 +1,28 @@
+Question
+
+Given two sets of integers A and B, print their symmetric difference in ascending order, with each integer printed on a new line.
+
+Symmetric difference: Elements that are present in either set, but not in both.
+
+Input
+4
+2 4 5 9
+4
+2 4 11 12
+Output
+5
+9
+11
+12
+
+CODE
+M = int(input())
+A = set(map(int, input().split()))
+
+N = int(input())
+B = set(map(int, input().split()))
+
+result = A ^ B
+
+for x in sorted(result):
+    print(x)
