@@ -1,5 +1,4 @@
 Accessing Inherited Functions — Question
-
 You are given three classes A, B, and C. Each class has a protected function func(int &a) that multiplies a by:
 
 A::func() → multiplies by 2
