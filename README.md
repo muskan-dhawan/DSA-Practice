@@ -9017,4 +9017,36 @@ Output
 9
 11
 12
+### HACKERRANK 173: ITERTOOLS.COMBINATIONS()
+Question: itertools.combinations()
+
+You are given a string S containing only uppercase English letters and an integer K.
+
+Your task is to print all possible combinations of S, having sizes from 1 to K, in lexicographic sorted order.
+
+Input Format
+
+A single line containing the string S and integer K, separated by a space.
+
+Constraints
+1 ≤ K ≤ len(S)
+S contains only uppercase English letters.
+Output Format
+
+Print each combination on a separate line.
+
+Sample Input
+HACK 2
+Sample Output
+A
+C
+H
+K
+AC
+AH
+AK
+CH
+CK
+HK
+
 
