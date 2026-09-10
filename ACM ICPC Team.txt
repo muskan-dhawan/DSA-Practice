@@ -1,0 +1,26 @@
+ACM ICPC Team — Question
+
+You are given n people and m topics. Each person is represented by a binary string of length m, where:
+
+1 means the person knows the topic.
+0 means the person does not know the topic.
+
+A team consists of exactly two people. A team knows a topic if at least one of its members knows it.
+
+Find:
+
+The maximum number of topics any team can know.
+The number of teams that know this maximum number of topics.
+
+Input:
+
+4 5
+10101
+11100
+11010
+00101
+
+Output:
+
+5
+2
