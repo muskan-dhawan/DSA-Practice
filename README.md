@@ -9048,5 +9048,31 @@ AK
 CH
 CK
 HK
+### HACKERRANK 174: INCORRECT REGEX
+HackerRank Question — Python: Incorrect Regex
 
+Problem:
+You are given T strings. For each string, determine whether it is a valid regular expression.
 
+Print:
+
+True if the regex is valid
+False if the regex is invalid
+Input
+2
+.*\+
+.*+
+Output
+True
+False
+Your Task
+
+Complete the code:
+
+import re
+
+T = int(raw_input())
+
+for _ in range(T):
+    s = raw_input()
+    
