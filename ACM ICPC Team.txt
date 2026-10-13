@@ -1,5 +1,4 @@
 ACM ICPC Team — Question
-
 You are given n people and m topics. Each person is represented by a binary string of length m, where:
 
 1 means the person knows the topic.
